@@ -1,3 +1,21 @@
+$('.menu1 > li').hover(
+	function () {
+		$(this).find('.subgnb > li').stop().slideDown();
+	},
+	function () {
+		$(this).find('.subgnb > li').stop().slideUp();
+	}
+);
+
+$('.menu2 > li').hover(
+	function () {
+		$(this).find('.subgnb > li').stop().slideDown();
+	},
+	function () {
+		$(this).find('.subgnb > li').stop().slideUp();
+	}
+);
+
 $('.gnb_web > li').hover(
 	function () {
 		$(this).children('.submenu').stop().slideDown();
@@ -7,13 +25,20 @@ $('.gnb_web > li').hover(
 	}
 );
 
-// 메뉴 호출
-$('.btnCall').click(function () {
-	$('.menuMo').addClass('on');
-});
-$('.close').click(function () {
-	$('.menuMo').removeClass('on');
-});
+// $(document).ready(function () {
+// 	$(window).scroll(function () {
+// 		$('.quick').each(function (i) {
+// 			var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 3;
+// 			var Top_of_window = $(window).scrollTop();
+
+// 			if (bottom_of_window > bottom_of_element) {
+// 				$(this).animate({ opacity: '1' }, 700);
+// 			}
+// 		});
+// 	});
+// });
+
+// 1번째 슬라이드 메뉴
 
 const menuSlides = document.querySelectorAll('.main_slidemenu article');
 
@@ -24,27 +49,34 @@ menuSlides.forEach((el, index) => {
 	});
 });
 
-// 2번째 슬라이드 메뉴
-let active_index = 0;
-let enable_event = true;
-$('.service_ul>li').on('click', function (event) {
-	event.preventDefault();
-	// 현재 활성화클래스가 있는 인덱스를 구함
+// 2번째 스와이퍼
+var swiper = new Swiper('#treatment', {
+	effect: 'coverflow',
+	grabCursor: true,
+	centeredSlides: true,
+	slidesPerView: 'auto',
 
-	// 예: 현재 5번이 보이고 2번을 누르는 상태라면
-	// 현재 활성화 클래스가 있는 인덱스는 = 5
-	if (enable_event) {
-		enable_event = false;
-
-		let current_index = $('.bg_container>li').filter('.on').index();
-		let target_index = $(this).index();
-		active_index = target_index;
-		// 만약 활성화인덱스와 타겟인덱스가 같다면? ==> 해당 li로 이동하게끔
-		if (active_index == current_index) {
-			$('#tabMenu>ul>li>a').removeClass('on');
-			$('.bg_conatiner>li').addClass('on');
-		}
-	}
+	coverflowEffect: {
+		rotate: 50,
+		stretch: -100,
+		depth: 400,
+		modifier: 1,
+		slideShadows: false,
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+		renderBullet: function (index, className) {
+			return '<span class="' + className + '">' + '</span>';
+		},
+	},
+	loop: true,
+	spaceBetween: 0,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: true,
+	},
+	speed: 1000,
 });
 
 // 지도
@@ -74,82 +106,94 @@ var marker = new kakao.maps.Marker({
 // 마커가 지도 위에 표시되도록 설정합니다
 marker.setMap(map);
 
-// 상담신청
+// special 부분
+//https://codepen.io/GreenSock/pen/oNdNLxL
 
-let form = document.querySelector('#footer');
-let btnSubmit = document.querySelector('input[type=submit]');
+var $sections = document.querySelectorAll('#container');
+var tl = gsap.timeline({
+	scrollTrigger: {
+		trigger: '.special',
+		pin: true,
+		scrub: 0.3,
+		start: '0%',
+		end: '100%',
+	},
+});
+tl.from($sections, {
+	x: '450',
+	autoAlpha: 1,
+	duration: 2,
+	ease: 'none',
+	stagger: 3,
+	pin: true,
+}).to($sections, {
+	x: '-1700',
+	duration: 3,
+	pin: true,
+	scrub: true,
+});
 
-btnSubmit.addEventListener('click', (e) => {
-	// 증상
-	if (!isTxt1('cc', 2)) {
-		e.preventDefault();
-	}
-	// 이름
-	if (!isTxt2('username', 1)) {
-		e.preventDefault();
-	}
-	// 연락처
-	if (!isTxt3('phonenumber', 7)) {
-		e.preventDefault();
+// youtube api
+let vidList = document.querySelector('.vidlist');
+let key = 'AIzaSyBt3lo-oPPYPt30aJ3ISHHIwo-tB4Vo0Jo';
+let playListId = 'PLVLOMqfu3-zvOvrs4zQsK8uNBbHrdubh6';
+let url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playListId}&maxResults=6`;
+
+fetch(url)
+	.then((data) => {
+		console.log(data);
+		return data.json();
+	})
+	.then((json) => {
+		console.log(json);
+		let items = json.items;
+		//json.items로 배열의 형태로 데이터들을 불러오고 있음
+		let result = '';
+		items.map((el) => {
+			result += `
+            <article>
+				<a href="${el.snippet.resourceId.videoId}" class="pic">
+					<img src="${el.snippet.thumbnails.medium.url}" alt="" />
+				</a>
+		    </article>`;
+			// console.log(result);
+			vidList.innerHTML = result;
+		});
+	});
+
+let article = document.querySelectorAll('article');
+console.log(article);
+
+vidList.addEventListener('click', (e) => {
+	e.preventDefault();
+	if (!e.target.closest('a')) return;
+
+	let vidId = e.target.closest('a').getAttribute('href');
+	let pop = document.createElement('figure');
+	pop.classList.add('pop');
+	pop.innerHTML = `
+	 <iframe src="https://www.youtube.com/embed/${vidId}"
+	 frameobrder ="0" width="100%" height="100%"></iframe>
+	 <span class="btnClose">X</span>
+	 `;
+	vidList.append(pop);
+});
+
+let close = document.querySelector('.btnClose');
+vidList.addEventListener('click', (e) => {
+	let pop = vidList.querySelector('.pop');
+
+	if (pop) {
+		let close = pop.querySelector('.btnClose');
+		if (e.target == close) pop.remove();
 	}
 });
-function isTxt1(cc, len) {
-	let input = form.querySelector(`[name=${cc}]`);
-	let txt = input.value;
-	if (txt.length >= 2) {
-		let iserrMsgs = input.closest('td').querySelectorAll('p');
-		if (iserrMsgs.length > 0) {
-			input.closest('td').querySelector('p').remove();
-		}
-		return true;
-	} else {
-		let iserrMsgs = input.closest('td').querySelectorAll('p');
-		if (iserrMsgs.length > 0) {
-			input.closest('td').querySelector('p').remove();
-		}
-		let errMsg = document.createElement('p');
-		errMsg.append(`증상을 2글자 이상 입력하세요.`);
-		input.closest('td').append(errMsg);
-		return false;
-	}
-}
-function isTxt2(username, len) {
-	let input = form.querySelector(`[name=${username}]`);
-	let txt = input.value;
-	if (txt.length >= 1) {
-		let iserrMsgs = input.closest('td').querySelectorAll('p');
-		if (iserrMsgs.length > 0) {
-			input.closest('td').querySelector('p').remove();
-		}
-		return true;
-	} else {
-		let iserrMsgs = input.closest('td').querySelectorAll('p');
-		if (iserrMsgs.length > 0) {
-			input.closest('td').querySelector('p').remove();
-		}
-		let errMsg = document.createElement('p');
-		errMsg.append(`이름을 정확히 입력하세요.`);
-		input.closest('td').append(errMsg);
-		return false;
-	}
-}
-function isTxt3(phonenumber, len) {
-	let input = form.querySelector(`[name=${[phonenumber]}]`);
-	let txt = input.value;
-	if (txt.length >= 7) {
-		let iserrMsgs = input.closest('td').querySelectorAll('p');
-		if (iserrMsgs.length > 0) {
-			input.closest('td').querySelector('p').remove();
-		}
-		return true;
-	} else {
-		let iserrMsgs = input.closest('td').querySelectorAll('p');
-		if (iserrMsgs.length > 0) {
-			input.closest('td').querySelector('p').remove();
-		}
-		let errMsg = document.createElement('p');
-		errMsg.append(`연락처를 정확히 입력하세요.`);
-		input.closest('td').append(errMsg);
-		return false;
-	}
-}
+
+// 지도 좌측 화살표
+$('.left_button > img').click(function () {
+	$('#left').css('left', '0');
+	$('#map').css('width', '50%');
+	$('#map').css('position', 'absolute');
+	$('#map').css('top', '0');
+	$('#map').css('right', '0');
+});

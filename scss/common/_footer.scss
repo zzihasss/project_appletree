@@ -1,0 +1,424 @@
+// 4번 상담신청 및 주소 안내사항 푸터
+#footer {
+	width: 100vw;
+	height: 100vh;
+	background-color: #eef4f1;
+	position: relative;
+	#left {
+		width: 50%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: -50%;
+		background-color: #eef4f1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 30;
+		.wrap {
+			width: 80%;
+			height: 80%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			border-top: 3px solid #333;
+			border-bottom: 3px solid #333;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			.address {
+				padding-left: 20px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				gap: 20px;
+				padding-bottom: 40px;
+				border-bottom: 1px solid #000;
+				h3 {
+					font: 20px/1 'g마켓 산스 ttf';
+					color: #000;
+				}
+				h4 {
+					font: bold 25px/1.3 'g마켓 산스 ttf';
+					color: #333;
+				}
+				.traffic {
+					h5 {
+						font: 20px/1.3 'g마켓 산스 ttf';
+						color: #333;
+						padding-bottom: 5px;
+					}
+					h6 {
+						font: 20px/1.3 'g마켓 산스 ttf';
+						color: #333;
+					}
+				}
+			}
+			.time {
+				padding-left: 20px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				gap: 35px;
+				h3 {
+					font: 20px/1 'g마켓 산스 ttf';
+					color: #000;
+				}
+				.box_wrap {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					gap: 25px;
+					.box {
+						width: 700px;
+						display: flex;
+						font: 20px/1 'g마켓 산스 ttf';
+						color: #333;
+						.day {
+							width: 50%;
+						}
+						.time {
+							width: 50%;
+						}
+						.close {
+							color: rgb(219, 96, 96);
+							padding-right: 10px;
+						}
+					}
+				}
+			}
+			.telephone {
+				padding-left: 20px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				gap: 20px;
+				padding-top: 30px;
+				border-top: 1px solid #000;
+				h2 {
+					font: 20px/40px 'g마켓 산스 ttf';
+					color: #000;
+				}
+				.tele_content {
+					height: 40px;
+					display: flex;
+					h3 {
+						font: bold 30px/40px 'g마켓 산스 ttf';
+						padding-right: 20px;
+					}
+					.callme {
+						width: 200px;
+						height: 40px;
+						background: linear-gradient(90deg, #79c344, #16abe6);
+						border: none;
+						font: bold 23px/40px 'g마켓 산스 ttf';
+						color: #fff;
+						border-radius: 30px;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+	.left_button {
+		position: absolute;
+		top: calc(50% - 125px);
+		left: 20px;
+		z-index: 10;
+	}
+	#right {
+		width: 100%;
+		height: 100%;
+		padding-left: 300px;
+		#map {
+			width: 100%;
+			height: 100%;
+			border: 1px solid #fff;
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#footer {
+		width: 100vw;
+		height: 100vh;
+		background-color: #eef4f1;
+		position: relative;
+		#left {
+			width: 50%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: -50%;
+			background-color: #eef4f1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 30;
+			.wrap {
+				width: 80%;
+				height: 80%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				border-top: 3px solid #333;
+				border-bottom: 3px solid #333;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				.address {
+					padding-left: 20px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					gap: 20px;
+					padding-bottom: 40px;
+					border-bottom: 1px solid #000;
+					h3 {
+						font: 20px/1 'g마켓 산스 ttf';
+						color: #000;
+					}
+					h4 {
+						font: bold 18px/1 'g마켓 산스 ttf';
+						color: #333;
+					}
+					.traffic {
+						h5 {
+							font: 14px/1 'g마켓 산스 ttf';
+							color: #333;
+							padding-bottom: 5px;
+						}
+						h6 {
+							font: 14px/1 'g마켓 산스 ttf';
+							color: #333;
+						}
+					}
+				}
+				.time {
+					padding-left: 20px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					gap: 20px;
+					h3 {
+						font: 20px/1 'g마켓 산스 ttf';
+						color: #000;
+					}
+					.box_wrap {
+						display: flex;
+						flex-direction: column;
+						justify-content: space-evenly;
+						gap: 15px;
+						.box {
+							width: 240px;
+							display: flex;
+							font: 14px/1 'g마켓 산스 ttf';
+							color: #333;
+							.day {
+								width: 50%;
+							}
+							.time {
+								width: 50%;
+							}
+							.close {
+								color: rgb(219, 96, 96);
+								padding-right: 10px;
+							}
+						}
+					}
+				}
+				.telephone {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					gap: 10px;
+					padding-top: 30px;
+					border-top: 1px solid #000;
+					h2 {
+						font: 20px/40px 'g마켓 산스 ttf';
+						color: #000;
+					}
+					.tele_content {
+						height: 20px;
+						display: flex;
+						h3 {
+							font: bold 15px/20px 'g마켓 산스 ttf';
+							padding-right: 5px;
+						}
+						.callme {
+							width: 130px;
+							height: 20px;
+							background: linear-gradient(90deg, #79c344, #16abe6);
+							border: none;
+							font: bold 14px/20px 'g마켓 산스 ttf';
+							color: #fff;
+							border-radius: 30px;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+		.left_button {
+			position: absolute;
+			top: calc(50% - 125px);
+			left: 20px;
+			z-index: 10;
+			> img {
+				width: 150px;
+				height: 150px;
+			}
+		}
+		#right {
+			width: 100%;
+			height: 100%;
+			padding-left: 180px;
+			#map {
+				width: 100%;
+				height: 100%;
+				border: 1px solid #fff;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 428px) {
+	#footer {
+		width: 100vw;
+		height: 100vh;
+		background-color: #eef4f1;
+		position: relative;
+		#left {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: -100%;
+			background-color: #eef4f1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 30;
+			.wrap {
+				width: 80%;
+				height: 80%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				border-top: 3px solid #333;
+				border-bottom: 3px solid #333;
+				padding-top: 30px;
+				padding-bottom: 30px;
+				.address {
+					padding-left: 20px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					gap: 20px;
+					padding-bottom: 40px;
+					border-bottom: 1px solid #000;
+					h3 {
+						font: 20px/1 'g마켓 산스 ttf';
+						color: #000;
+					}
+					h4 {
+						font: bold 18px/1 'g마켓 산스 ttf';
+						color: #333;
+					}
+					.traffic {
+						h5 {
+							font: 14px/1 'g마켓 산스 ttf';
+							color: #333;
+							padding-bottom: 5px;
+						}
+						h6 {
+							font: 14px/1 'g마켓 산스 ttf';
+							color: #333;
+						}
+					}
+				}
+				.time {
+					padding-left: 20px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					gap: 20px;
+					h3 {
+						font: 20px/1 'g마켓 산스 ttf';
+						color: #000;
+					}
+					.box_wrap {
+						display: flex;
+						flex-direction: column;
+						justify-content: space-evenly;
+						gap: 15px;
+						.box {
+							width: 240px;
+							display: flex;
+							font: 14px/1 'g마켓 산스 ttf';
+							color: #333;
+							.day {
+								width: 50%;
+							}
+							.time {
+								width: 50%;
+							}
+							.close {
+								color: rgb(219, 96, 96);
+								padding-right: 10px;
+							}
+						}
+					}
+				}
+				.telephone {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					gap: 10px;
+					padding-top: 30px;
+					border-top: 1px solid #000;
+					h2 {
+						font: 20px/40px 'g마켓 산스 ttf';
+						color: #000;
+					}
+					.tele_content {
+						height: 20px;
+						display: flex;
+						h3 {
+							font: bold 15px/20px 'g마켓 산스 ttf';
+							padding-right: 5px;
+						}
+						.callme {
+							width: 130px;
+							height: 20px;
+							background: linear-gradient(90deg, #79c344, #16abe6);
+							border: none;
+							font: bold 14px/20px 'g마켓 산스 ttf';
+							color: #fff;
+							border-radius: 30px;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+		.left_button {
+			position: absolute;
+			top: calc(50% - 125px);
+			left: 5px;
+			z-index: 10;
+			> img {
+				width: 50px;
+				height: 50px;
+			}
+		}
+		#right {
+			width: 100%;
+			height: 100%;
+			padding-left: 70px;
+			#map {
+				width: 100%;
+				height: 100%;
+				border: 1px solid #fff;
+			}
+		}
+	}
+}

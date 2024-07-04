@@ -1,0 +1,1645 @@
+#treatment_system {
+	.implant {
+		width: 100%;
+		height: 100%;
+		background-color: #eef4f1;
+		.wrap {
+			width: 100%;
+			height: 920px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			.top {
+				width: 1200px;
+				height: 600px;
+				display: flex;
+				justify-content: space-evenly;
+				position: relative;
+				.top_left {
+					width: 30%;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					padding-top: 100px;
+					h3 {
+						width: 150px;
+						height: 50px;
+						background-color: #def1df;
+						border: 2px solid #14abe8;
+						border-radius: 30px;
+						font: 25px/50px 'g마켓 산스 ttf';
+						color: #14abe8;
+						text-align: center;
+					}
+					h4 {
+						font: 25px/1 'g마켓 산스 ttf';
+						color: #333;
+					}
+					span {
+						font: 18px/1 'g마켓 산스 ttf';
+						color: #333;
+					}
+					.graph {
+						display: flex;
+						flex-direction: column;
+						gap: 10px;
+						img {
+							width: 344.8px;
+							height: 187.6px;
+						}
+						span {
+							:nth-of-type(1) {
+								font: 25px/1.5 'g마켓 산스 ttf';
+								color: #333;
+							}
+							:nth-of-type(2) {
+								font: 15px/1 'g마켓 산스 ttf';
+								color: #333;
+								text-align: right;
+							}
+						}
+					}
+				}
+				.top_right {
+					width: 70%;
+					height: 100%;
+					position: relative;
+					h5 {
+						font: bold 50px/1 'g마켓 산스 ttf';
+						color: lightsteelblue;
+						opacity: 0.4;
+						position: absolute;
+						top: 50px;
+						right: 50px;
+					}
+					.imgs {
+						.img1 {
+							position: absolute;
+							top: 100px;
+							left: 200px;
+							width: 365.4px;
+							height: 174.3px;
+						}
+						.img2 {
+							position: absolute;
+							bottom: 10px;
+							right: 50px;
+							width: 418.6px;
+							height: 316.4px;
+						}
+					}
+				}
+			}
+			#bottom {
+				width: 100%;
+				height: 300px;
+				position: relative;
+				overflow: hidden;
+				.slidebox {
+					width: 100%;
+					height: 100%;
+					.box {
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						> a {
+							width: 100%;
+							height: 100%;
+							> img {
+								width: 100%;
+								height: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.orthodontic {
+		width: 100vw;
+		height: 100vh;
+		background-color: #eef4f1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.wrap {
+			width: 1200px;
+			height: 720px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.left {
+				width: 50%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				.left_top {
+					width: 100%;
+					height: 300px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					h3 {
+						width: 150px;
+						height: 50px;
+						background-color: #def1df;
+						border: 2px solid #14abe8;
+						border-radius: 30px;
+						font: 25px/50px 'g마켓 산스 ttf';
+						color: #14abe8;
+						text-align: center;
+					}
+					h4 {
+						font: 25px/1 'g마켓 산스 ttf';
+						color: #333;
+					}
+					span {
+						width: 80%;
+						font: 18px/1 'g마켓 산스 ttf';
+						color: #333;
+					}
+				}
+				.left_bottom {
+					width: 100%;
+					height: 400px;
+					position: relative;
+					> img {
+						position: absolute;
+					}
+					.slidebar {
+						width: 480px;
+						height: 5px;
+						margin: 0 auto;
+						border-radius: 5px;
+						outline: none;
+						position: absolute;
+						bottom: 100px;
+						.slider {
+							width: 100%;
+							height: 100%;
+							-webkit-appearance: none;
+							appearance: none;
+							background: linear-gradient(90deg, #79c344, #16abe6);
+						}
+						::-webkit-slider-thumb {
+							-webkit-appearance: none;
+							height: 50px;
+							width: 50px;
+							background-image: url(/img/치료서비스/img/사과로고---배경X---수정2.png);
+							background-position: center center;
+							border-radius: 10%;
+							cursor: pointer;
+						}
+					}
+					.before {
+						width: 480px;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						font: 20px/1 'g마켓 산스 ttf';
+						color: #333;
+						position: absolute;
+						bottom: 0;
+					}
+				}
+			}
+			.right {
+				width: 50%;
+				height: 100%;
+				position: relative;
+				h5 {
+					font: bold 50px/1 'g마켓 산스 ttf';
+					color: lightsteelblue;
+					opacity: 0.4;
+					position: absolute;
+					top: 50px;
+					right: 50px;
+				}
+				.imgs {
+					.img1 {
+						position: absolute;
+						top: 90px;
+						left: 50px;
+						width: 370px;
+						height: 263px;
+					}
+					.img2 {
+						position: absolute;
+						bottom: 20px;
+						right: 20px;
+						width: 370px;
+						height: 370px;
+					}
+				}
+			}
+		}
+	}
+	.prevent {
+		width: 100vw;
+		height: 100vh;
+		background-color: #eef4f1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		overflow: hidden;
+		.wrap {
+			width: 1200px;
+			height: 720px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.left {
+				width: 50%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				h3 {
+					width: 150px;
+					height: 50px;
+					background-color: #def1df;
+					border: 2px solid #14abe8;
+					border-radius: 30px;
+					font: 25px/50px 'g마켓 산스 ttf';
+					color: #14abe8;
+					text-align: center;
+				}
+				h4 {
+					font: 25px/1 'g마켓 산스 ttf';
+					color: #333;
+				}
+				span {
+					width: 90%;
+					font: 18px/1 'g마켓 산스 ttf';
+					color: #333;
+				}
+			}
+			.right {
+				width: 50%;
+				height: 100%;
+				position: relative;
+				h5 {
+					font: bold 50px/1 'g마켓 산스 ttf';
+					color: lightsteelblue;
+					opacity: 0.4;
+					position: absolute;
+					top: 20px;
+					right: 50px;
+				}
+				h6 {
+					position: absolute;
+					top: 70px;
+					right: 220px;
+					font: bold 30px/1 'g마켓 산스 ttf';
+					color: #333;
+					text-align: center;
+				}
+				img {
+					width: 600px;
+					height: 600px;
+					position: relative;
+					top: 100px;
+				}
+			}
+		}
+		.line_wrap {
+			width: 100vw;
+			height: 70px;
+			background-color: #eef4f1;
+			position: absolute;
+			bottom: 0;
+			.line {
+				width: 100%;
+				height: 5px;
+				background: linear-gradient(90deg, #79c344, #16abe6);
+				animation: view 8s linear 0.8s 1 normal both;
+				animation-iteration-count: infinite;
+				h1 {
+					position: absolute;
+					bottom: 70px;
+					left: 20px;
+					font: 20px/1 'g마켓 산스 ttf';
+				}
+				.bg1 {
+					width: 203px;
+					height: 30px;
+					background-color: #eef4f1;
+					position: absolute;
+					left: 355px;
+				}
+				.bg2 {
+					width: 120px;
+					height: 30px;
+					background-color: #eef4f1;
+					position: absolute;
+					left: 900px;
+				}
+				.bg3 {
+					width: 126px;
+					height: 30px;
+					background-color: #eef4f1;
+					position: absolute;
+					left: 1377px;
+				}
+			}
+			.text_box1 {
+				display: inline-block;
+				> p:nth-of-type(1) {
+					font: 30px/1 'g마켓 산스 ttf';
+					color: #333;
+					position: absolute;
+					top: -10px;
+					left: 355px;
+					width: 205px;
+					overflow: hidden;
+					white-space: nowrap;
+					animation: opacityview 8s linear 2.3s 1 normal both;
+					animation-iteration-count: infinite;
+				}
+				> p:nth-of-type(2) {
+					font: 20px/1 'g마켓 산스 ttf';
+					color: #333;
+					position: absolute;
+					left: 355px;
+				}
+			}
+			.text_box2 {
+				display: inline-block;
+				> p:nth-of-type(1) {
+					font: 30px/1 'g마켓 산스 ttf';
+					color: #333;
+					position: absolute;
+					top: -10px;
+					left: 900px;
+					width: 120px;
+					overflow: hidden;
+					white-space: nowrap;
+					animation: opacityview 8s linear 4.6s 1 normal both;
+					animation-iteration-count: infinite;
+				}
+				> p:nth-of-type(2) {
+					font: 20px/1 'g마켓 산스 ttf';
+					color: #333;
+					position: absolute;
+					left: 900px;
+				}
+			}
+			.text_box3 {
+				display: inline-block;
+				> p:nth-of-type(1) {
+					font: 30px/1 'g마켓 산스 ttf';
+					color: #333;
+					position: absolute;
+					top: -10px;
+					left: 1377px;
+					width: 126px;
+					overflow: hidden;
+					white-space: nowrap;
+					animation: opacityview 8s linear 6.5s 1 normal both;
+					animation-iteration-count: infinite;
+				}
+				> p:nth-of-type(2) {
+					font: 20px/1 'g마켓 산스 ttf';
+					color: #333;
+					position: absolute;
+					left: 1377px;
+				}
+			}
+		}
+	}
+	.stomatology {
+		width: 100vw;
+		height: 100vh;
+		background-color: #eef4f1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		.wrap {
+			width: 1200px;
+			height: 720px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			position: relative;
+			.top {
+				width: 100%;
+				height: 25%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				h3 {
+					width: 150px;
+					height: 50px;
+					background-color: #def1df;
+					border: 2px solid #14abe8;
+					border-radius: 30px;
+					font: 25px/50px 'g마켓 산스 ttf';
+					color: #14abe8;
+					text-align: center;
+				}
+				h4 {
+					font: 25px/1 'g마켓 산스 ttf';
+					color: #333;
+				}
+				span {
+					font: 18px/1 'g마켓 산스 ttf';
+					color: #333;
+				}
+				h5 {
+					font: bold 50px/1 'g마켓 산스 ttf';
+					color: lightsteelblue;
+					opacity: 0.4;
+					position: absolute;
+					top: 20px;
+					right: 50px;
+				}
+			}
+			.bottom {
+				width: 100%;
+				height: 75%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				.bottom_top {
+					width: 100%;
+					height: 50%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					.box {
+						position: relative;
+						:hover {
+							opacity: 0;
+						}
+						.hover {
+							position: absolute;
+							width: 240px;
+							height: 240px;
+							background-color: rgba(0, 0, 0, 0.5);
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							text-align: center;
+							z-index: 30;
+							font: bold 20px/240px 'g마켓 산스 ttf';
+							color: #fff;
+						}
+					}
+				}
+				.bottom_bottom {
+					width: 720px;
+					height: 50%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin-left: 240px;
+					.box {
+						position: relative;
+						:hover {
+							opacity: 0;
+						}
+						.hover {
+							position: absolute;
+							width: 240px;
+							height: 240px;
+							background-color: rgba(0, 0, 0, 0.5);
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							text-align: center;
+							z-index: 30;
+							font: bold 20px/240px 'g마켓 산스 ttf';
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@keyframes view {
+	0% {
+		width: 0%;
+	}
+	50% {
+		width: 50%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+@keyframes opacityview {
+	0% {
+		width: 0%;
+		opacity: 0.8;
+	}
+	50% {
+		width: 50%;
+		opacity: 1;
+	}
+	100% {
+		width: 100%;
+		opacity: 0;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#treatment_system {
+		width: 100vw;
+		.implant {
+			width: 100%;
+			height: calc(100vh - 100px);
+			background-color: #eef4f1;
+			.wrap {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				.top {
+					width: 90%;
+					height: 70%;
+					display: flex;
+					justify-content: space-between;
+					position: relative;
+					.top_left {
+						width: 40%;
+						height: 100%;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						padding-top: 100px;
+						h3 {
+							width: 100px;
+							height: 35px;
+							background-color: #def1df;
+							border: 2px solid #14abe8;
+							border-radius: 30px;
+							font: 18px/35px 'g마켓 산스 ttf';
+							color: #14abe8;
+							text-align: center;
+						}
+						h4 {
+							font: 25px/1 'g마켓 산스 ttf';
+							color: #333;
+						}
+						span {
+							font: 15px/1 'g마켓 산스 ttf';
+							color: #333;
+						}
+						.graph {
+							display: flex;
+							flex-direction: column;
+							gap: 10px;
+							img {
+								width: 344.8px;
+								height: 187.6px;
+							}
+							span {
+								:nth-of-type(1) {
+									font: 15px/1.5 'g마켓 산스 ttf';
+									color: #333;
+								}
+								:nth-of-type(2) {
+									font: 13px/1 'g마켓 산스 ttf';
+									color: #333;
+									text-align: right;
+								}
+							}
+						}
+					}
+					.top_right {
+						width: 60%;
+						height: 100%;
+						position: relative;
+						h5 {
+							font: bold 40px/1 'g마켓 산스 ttf';
+							color: lightsteelblue;
+							opacity: 0.4;
+							position: absolute;
+							top: 50px;
+							right: 0px;
+						}
+						.imgs {
+							.img1 {
+								position: absolute;
+								top: 100px;
+								left: 30px;
+								width: 365.4px;
+								height: 174.3px;
+							}
+							.img2 {
+								position: absolute;
+								top: 300px;
+								right: -10px;
+								width: 293.02px;
+								height: 221.48px;
+							}
+						}
+					}
+				}
+				#bottom {
+					width: 100%;
+					height: 150px;
+					position: relative;
+					overflow: hidden;
+					.slidebox {
+						width: 100%;
+						height: 100%;
+						.box {
+							width: 100%;
+							height: 100%;
+							position: absolute;
+							> a {
+								width: 100%;
+								height: 100%;
+								> img {
+									width: 100%;
+									height: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.orthodontic {
+			width: 100vw;
+			height: 100vh;
+			background-color: #eef4f1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.wrap {
+				width: 90%;
+				height: 80%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.left {
+					width: 50%;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					.left_top {
+						width: 100%;
+						height: 300px;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-evenly;
+						h3 {
+							width: 100px;
+							height: 35px;
+							background-color: #def1df;
+							border: 2px solid #14abe8;
+							border-radius: 30px;
+							font: 18px/35px 'g마켓 산스 ttf';
+							color: #14abe8;
+							text-align: center;
+						}
+						h4 {
+							font: 25px/1 'g마켓 산스 ttf';
+							color: #333;
+						}
+						span {
+							width: 100%;
+							font: 15px/1.3 'g마켓 산스 ttf';
+							color: #333;
+						}
+					}
+					.left_bottom {
+						width: 100%;
+						height: 400px;
+						position: relative;
+						> img {
+							position: absolute;
+							width: 384px;
+							height: 216px;
+						}
+						.slidebar {
+							width: 384px;
+							height: 5px;
+							margin: 0 auto;
+							border-radius: 5px;
+							outline: none;
+							position: absolute;
+							bottom: 100px;
+							.slider {
+								width: 100%;
+								height: 100%;
+								-webkit-appearance: none;
+								appearance: none;
+								background: linear-gradient(90deg, #79c344, #16abe6);
+							}
+							::-webkit-slider-thumb {
+								-webkit-appearance: none;
+								height: 50px;
+								width: 50px;
+								background-image: url(/img/치료서비스/img/사과로고---배경X---수정2.png);
+								background-position: center center;
+								border-radius: 10%;
+								cursor: pointer;
+							}
+						}
+						.before {
+							width: 384px;
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							font: 20px/1 'g마켓 산스 ttf';
+							color: #333;
+							position: absolute;
+							bottom: 0;
+						}
+					}
+				}
+				.right {
+					width: 50%;
+					height: 100%;
+					position: relative;
+					h5 {
+						font: bold 30px/1 'g마켓 산스 ttf';
+						color: lightsteelblue;
+						opacity: 0.4;
+						position: absolute;
+						top: 50px;
+						right: 10px;
+					}
+					.imgs {
+						.img1 {
+							position: absolute;
+							top: 90px;
+							left: 50px;
+							width: 296px;
+							height: 210.4px;
+						}
+						.img2 {
+							position: absolute;
+							bottom: 200px;
+							right: 20px;
+							width: 185px;
+							height: 185px;
+						}
+					}
+				}
+			}
+		}
+		.prevent {
+			width: 100vw;
+			height: 100vh;
+			background-color: #eef4f1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			overflow: hidden;
+			.wrap {
+				width: 95%;
+				height: 80%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.left {
+					width: 40%;
+					height: 80%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					h3 {
+						width: 110px;
+						height: 35px;
+						background-color: #def1df;
+						border: 2px solid #14abe8;
+						border-radius: 30px;
+						font: 18px/35px 'g마켓 산스 ttf';
+						color: #14abe8;
+						text-align: center;
+					}
+					h4 {
+						font: 25px/1 'g마켓 산스 ttf';
+						color: #333;
+					}
+					span {
+						width: 90%;
+						font: 15px/1 'g마켓 산스 ttf';
+						color: #333;
+					}
+				}
+				.right {
+					width: 50%;
+					height: 100%;
+					position: relative;
+					h5 {
+						font: bold 25px/1 'g마켓 산스 ttf';
+						color: lightsteelblue;
+						opacity: 0.4;
+						position: absolute;
+						top: 80px;
+						right: 0px;
+					}
+					h6 {
+						position: absolute;
+						top: 150px;
+						right: 135px;
+						font: bold 20px/1 'g마켓 산스 ttf';
+						color: #333;
+						text-align: center;
+					}
+					img {
+						width: 400px;
+						height: 400px;
+						position: absolute;
+						top: 200px;
+						right: 0px;
+					}
+				}
+			}
+			.line_wrap {
+				width: 100vw;
+				height: 70px;
+				background-color: #eef4f1;
+				position: absolute;
+				bottom: 0;
+				display: none;
+				.line {
+					width: 100%;
+					height: 5px;
+					background: linear-gradient(90deg, #79c344, #16abe6);
+					animation: view 8s linear 0.8s 1 normal both;
+					animation-iteration-count: infinite;
+					h1 {
+						position: absolute;
+						bottom: 70px;
+						left: 20px;
+						font: 20px/1 'g마켓 산스 ttf';
+					}
+					.bg1 {
+						width: 203px;
+						height: 30px;
+						background-color: #eef4f1;
+						position: absolute;
+						left: 355px;
+					}
+					.bg2 {
+						width: 120px;
+						height: 30px;
+						background-color: #eef4f1;
+						position: absolute;
+						left: 900px;
+					}
+					.bg3 {
+						width: 126px;
+						height: 30px;
+						background-color: #eef4f1;
+						position: absolute;
+						left: 1377px;
+					}
+				}
+				.text_box1 {
+					display: inline-block;
+					> p:nth-of-type(1) {
+						font: 30px/1 'g마켓 산스 ttf';
+						color: #333;
+						position: absolute;
+						top: -10px;
+						left: 355px;
+						width: 205px;
+						overflow: hidden;
+						white-space: nowrap;
+						animation: opacityview 8s linear 2.3s 1 normal both;
+						animation-iteration-count: infinite;
+					}
+					> p:nth-of-type(2) {
+						font: 20px/1 'g마켓 산스 ttf';
+						color: #333;
+						position: absolute;
+						left: 355px;
+					}
+				}
+				.text_box2 {
+					display: inline-block;
+					> p:nth-of-type(1) {
+						font: 30px/1 'g마켓 산스 ttf';
+						color: #333;
+						position: absolute;
+						top: -10px;
+						left: 900px;
+						width: 120px;
+						overflow: hidden;
+						white-space: nowrap;
+						animation: opacityview 8s linear 4.6s 1 normal both;
+						animation-iteration-count: infinite;
+					}
+					> p:nth-of-type(2) {
+						font: 20px/1 'g마켓 산스 ttf';
+						color: #333;
+						position: absolute;
+						left: 900px;
+					}
+				}
+				.text_box3 {
+					display: inline-block;
+					> p:nth-of-type(1) {
+						font: 30px/1 'g마켓 산스 ttf';
+						color: #333;
+						position: absolute;
+						top: -10px;
+						left: 1377px;
+						width: 126px;
+						overflow: hidden;
+						white-space: nowrap;
+						animation: opacityview 8s linear 6.5s 1 normal both;
+						animation-iteration-count: infinite;
+					}
+					> p:nth-of-type(2) {
+						font: 20px/1 'g마켓 산스 ttf';
+						color: #333;
+						position: absolute;
+						left: 1377px;
+					}
+				}
+			}
+		}
+		.stomatology {
+			width: 100vw;
+			height: 100vh;
+			background-color: #eef4f1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			.wrap {
+				width: 80%;
+				height: 80%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				position: relative;
+				.top {
+					width: 100%;
+					height: 25%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					h3 {
+						width: 100px;
+						height: 35px;
+						background-color: #def1df;
+						border: 2px solid #14abe8;
+						border-radius: 30px;
+						font: 18px/35px 'g마켓 산스 ttf';
+						color: #14abe8;
+						text-align: center;
+					}
+					h4 {
+						font: 25px/1 'g마켓 산스 ttf';
+						color: #333;
+					}
+					span {
+						font: 15px/1 'g마켓 산스 ttf';
+						color: #333;
+					}
+					h5 {
+						font: bold 30px/1 'g마켓 산스 ttf';
+						color: lightsteelblue;
+						opacity: 0.4;
+						position: absolute;
+						top: 80px;
+						right: 10px;
+					}
+				}
+				.bottom {
+					width: 600px;
+					height: 240px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					.bottom_top {
+						width: 100%;
+						height: 50%;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						.box {
+							position: relative;
+							> img {
+								width: 120px;
+								height: 120px;
+							}
+							:hover {
+								opacity: 0;
+							}
+							.hover {
+								position: absolute;
+								width: 120px;
+								height: 120px;
+								background-color: rgba(0, 0, 0, 0.5);
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+								text-align: center;
+								z-index: 30;
+								font: 13px/120px 'g마켓 산스 ttf';
+								color: #fff;
+							}
+						}
+					}
+					.bottom_bottom {
+						width: 360px;
+						height: 50%;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						margin-left: 120px;
+						.box {
+							position: relative;
+							> img {
+								width: 120px;
+								height: 120px;
+							}
+							:hover {
+								opacity: 0;
+							}
+							.hover {
+								position: absolute;
+								width: 120px;
+								height: 120px;
+								background-color: rgba(0, 0, 0, 0.5);
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+								text-align: center;
+								z-index: 30;
+								font: 13px/120px 'g마켓 산스 ttf';
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 428px) {
+	#treatment_system {
+		width: 100vw;
+		.implant {
+			width: 100%;
+			height: calc(100vh - 100px);
+			background-color: #eef4f1;
+			.wrap {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				.top {
+					width: 90%;
+					height: 75%;
+					display: flex;
+					justify-content: space-between;
+					position: relative;
+					.top_left {
+						width: 60%;
+						height: 100%;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						padding-top: 100px;
+						h3 {
+							width: 100px;
+							height: 35px;
+							background-color: #def1df;
+							border: 2px solid #14abe8;
+							border-radius: 30px;
+							font: 18px/35px 'g마켓 산스 ttf';
+							color: #14abe8;
+							text-align: center;
+						}
+						h4 {
+							font: 25px/1 'g마켓 산스 ttf';
+							color: #333;
+						}
+						span {
+							font: 15px/1 'g마켓 산스 ttf';
+							color: #333;
+						}
+						.graph {
+							display: flex;
+							flex-direction: column;
+							gap: 10px;
+							img {
+								width: 344.8px;
+								height: 187.6px;
+							}
+							span {
+								:nth-of-type(1) {
+									font: 13px/1.5 'g마켓 산스 ttf';
+									color: #333;
+								}
+								:nth-of-type(2) {
+									font: 10px/1 'g마켓 산스 ttf';
+									color: #333;
+									text-align: right;
+								}
+							}
+						}
+					}
+					.top_right {
+						width: 40%;
+						height: 100%;
+						position: relative;
+						h5 {
+							font: bold 40px/1 'g마켓 산스 ttf';
+							color: lightsteelblue;
+							opacity: 0.4;
+							position: absolute;
+							top: 50px;
+							right: 0px;
+						}
+						.imgs {
+							.img1 {
+								position: absolute;
+								top: 100px;
+								left: auto;
+								right: 0;
+								width: 182.7px;
+								height: 87.15px;
+							}
+							.img2 {
+								position: absolute;
+								top: 300px;
+								right: -10px;
+								width: 293.02px;
+								height: 221.48px;
+								display: none;
+							}
+						}
+					}
+				}
+				#bottom {
+					width: 100%;
+					height: 100px;
+					position: relative;
+					overflow: hidden;
+					.slidebox {
+						width: 100%;
+						height: 100%;
+						.box {
+							width: 100%;
+							height: 100%;
+							position: absolute;
+							> a {
+								width: 100%;
+								height: 100%;
+								> img {
+									width: 100%;
+									height: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.orthodontic {
+			width: 100vw;
+			height: 100vh;
+			background-color: #eef4f1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.wrap {
+				width: 90%;
+				height: 80%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.left {
+					width: 60%;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					.left_top {
+						width: 100%;
+						height: 300px;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-evenly;
+						h3 {
+							width: 100px;
+							height: 35px;
+							background-color: #def1df;
+							border: 2px solid #14abe8;
+							border-radius: 30px;
+							font: 18px/35px 'g마켓 산스 ttf';
+							color: #14abe8;
+							text-align: center;
+						}
+						h4 {
+							font: 25px/1 'g마켓 산스 ttf';
+							color: #333;
+						}
+						span {
+							width: 100%;
+							font: 15px/1.3 'g마켓 산스 ttf';
+							color: #333;
+						}
+					}
+					.left_bottom {
+						width: 100%;
+						height: 400px;
+						position: relative;
+						> img {
+							position: absolute;
+							width: 384px;
+							height: 216px;
+						}
+						.slidebar {
+							width: 384px;
+							height: 5px;
+							margin: 0 auto;
+							border-radius: 5px;
+							outline: none;
+							position: absolute;
+							bottom: 100px;
+							.slider {
+								width: 100%;
+								height: 100%;
+								-webkit-appearance: none;
+								appearance: none;
+								background: linear-gradient(90deg, #79c344, #16abe6);
+							}
+							::-webkit-slider-thumb {
+								-webkit-appearance: none;
+								height: 50px;
+								width: 50px;
+								background-image: url(/img/치료서비스/img/사과로고---배경X---수정2.png);
+								background-position: center center;
+								border-radius: 10%;
+								cursor: pointer;
+							}
+						}
+						.before {
+							width: 384px;
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							font: 20px/1 'g마켓 산스 ttf';
+							color: #333;
+							position: absolute;
+							bottom: 0;
+						}
+					}
+				}
+				.right {
+					width: 50%;
+					height: 100%;
+					position: relative;
+					h5 {
+						font: bold 30px/1 'g마켓 산스 ttf';
+						color: lightsteelblue;
+						opacity: 0.4;
+						position: absolute;
+						top: 50px;
+						right: 10px;
+					}
+					.imgs {
+						.img1 {
+							position: absolute;
+							top: 120px;
+							left: auto;
+							right: 0;
+							width: 177.6px;
+							height: 126.24px;
+						}
+						.img2 {
+							position: absolute;
+							bottom: 200px;
+							right: 20px;
+							width: 185px;
+							height: 185px;
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.prevent {
+			width: 100vw;
+			height: 100vh;
+			background-color: #eef4f1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			overflow: hidden;
+			.wrap {
+				width: 90%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				.left {
+					width: 100%;
+					height: 35%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					h3 {
+						width: 110px;
+						height: 35px;
+						background-color: #def1df;
+						border: 2px solid #14abe8;
+						border-radius: 30px;
+						font: 18px/35px 'g마켓 산스 ttf';
+						color: #14abe8;
+						text-align: center;
+					}
+					h4 {
+						font: 25px/1 'g마켓 산스 ttf';
+						color: #333;
+					}
+					span {
+						width: 90%;
+						font: 15px/1 'g마켓 산스 ttf';
+						color: #333;
+					}
+					img {
+						display: none;
+					}
+				}
+				.right {
+					width: 100%;
+					height: 65%;
+					position: relative;
+					h5 {
+						font: bold 25px/1 'g마켓 산스 ttf';
+						color: lightsteelblue;
+						opacity: 0.4;
+						position: absolute;
+						top: -250px;
+						right: 0px;
+					}
+					h6 {
+						position: absolute;
+						top: 150px;
+						right: 135px;
+						font: bold 20px/1 'g마켓 산스 ttf';
+						color: #333;
+						text-align: center;
+					}
+					img {
+						width: 400px;
+						height: 400px;
+						position: absolute;
+						top: auto;
+						left: auto;
+						right: auto;
+					}
+				}
+			}
+			.line_wrap {
+				width: 100vw;
+				height: 70px;
+				background-color: #eef4f1;
+				position: absolute;
+				bottom: 0;
+				display: none;
+				.line {
+					width: 100%;
+					height: 5px;
+					background: linear-gradient(90deg, #79c344, #16abe6);
+					animation: view 8s linear 0.8s 1 normal both;
+					animation-iteration-count: infinite;
+					h1 {
+						position: absolute;
+						bottom: 70px;
+						left: 20px;
+						font: 20px/1 'g마켓 산스 ttf';
+					}
+					.bg1 {
+						width: 203px;
+						height: 30px;
+						background-color: #eef4f1;
+						position: absolute;
+						left: 355px;
+					}
+					.bg2 {
+						width: 120px;
+						height: 30px;
+						background-color: #eef4f1;
+						position: absolute;
+						left: 900px;
+					}
+					.bg3 {
+						width: 126px;
+						height: 30px;
+						background-color: #eef4f1;
+						position: absolute;
+						left: 1377px;
+					}
+				}
+				.text_box1 {
+					display: inline-block;
+					> p:nth-of-type(1) {
+						font: 30px/1 'g마켓 산스 ttf';
+						color: #333;
+						position: absolute;
+						top: -10px;
+						left: 355px;
+						width: 205px;
+						overflow: hidden;
+						white-space: nowrap;
+						animation: opacityview 8s linear 2.3s 1 normal both;
+						animation-iteration-count: infinite;
+					}
+					> p:nth-of-type(2) {
+						font: 20px/1 'g마켓 산스 ttf';
+						color: #333;
+						position: absolute;
+						left: 355px;
+					}
+				}
+				.text_box2 {
+					display: inline-block;
+					> p:nth-of-type(1) {
+						font: 30px/1 'g마켓 산스 ttf';
+						color: #333;
+						position: absolute;
+						top: -10px;
+						left: 900px;
+						width: 120px;
+						overflow: hidden;
+						white-space: nowrap;
+						animation: opacityview 8s linear 4.6s 1 normal both;
+						animation-iteration-count: infinite;
+					}
+					> p:nth-of-type(2) {
+						font: 20px/1 'g마켓 산스 ttf';
+						color: #333;
+						position: absolute;
+						left: 900px;
+					}
+				}
+				.text_box3 {
+					display: inline-block;
+					> p:nth-of-type(1) {
+						font: 30px/1 'g마켓 산스 ttf';
+						color: #333;
+						position: absolute;
+						top: -10px;
+						left: 1377px;
+						width: 126px;
+						overflow: hidden;
+						white-space: nowrap;
+						animation: opacityview 8s linear 6.5s 1 normal both;
+						animation-iteration-count: infinite;
+					}
+					> p:nth-of-type(2) {
+						font: 20px/1 'g마켓 산스 ttf';
+						color: #333;
+						position: absolute;
+						left: 1377px;
+					}
+				}
+			}
+		}
+		.stomatology {
+			width: 100vw;
+			height: 100vh;
+			background-color: #eef4f1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			.wrap {
+				width: 80%;
+				height: 80%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				position: relative;
+				.top {
+					width: 100%;
+					height: 25%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					h3 {
+						width: 100px;
+						height: 35px;
+						background-color: #def1df;
+						border: 2px solid #14abe8;
+						border-radius: 30px;
+						font: 18px/35px 'g마켓 산스 ttf';
+						color: #14abe8;
+						text-align: center;
+					}
+					h4 {
+						font: 25px/1 'g마켓 산스 ttf';
+						color: #333;
+					}
+					span {
+						font: 15px/1 'g마켓 산스 ttf';
+						color: #333;
+					}
+					h5 {
+						font: bold 30px/1 'g마켓 산스 ttf';
+						color: lightsteelblue;
+						opacity: 0.4;
+						position: absolute;
+						top: 50px;
+						right: 0px;
+					}
+				}
+				.bottom {
+					width: 360px;
+					height: 240px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					.bottom_top {
+						width: 100%;
+						height: 50%;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						.box {
+							position: relative;
+							> img {
+								width: 120px;
+								height: 120px;
+							}
+							:hover {
+								opacity: 0;
+							}
+							.hover {
+								position: absolute;
+								width: 120px;
+								height: 120px;
+								background-color: rgba(0, 0, 0, 0.5);
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+								text-align: center;
+								z-index: 30;
+								font: 13px/120px 'g마켓 산스 ttf';
+								color: #fff;
+							}
+						}
+					}
+					.bottom_bottom {
+						width: 240px;
+						height: 50%;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						margin-left: 60px;
+						.box {
+							position: relative;
+							> img {
+								width: 120px;
+								height: 120px;
+							}
+							:hover {
+								opacity: 0;
+							}
+							.hover {
+								position: absolute;
+								width: 120px;
+								height: 120px;
+								background-color: rgba(0, 0, 0, 0.5);
+								top: 50%;
+								left: 50%;
+								transform: translate(-50%, -50%);
+								text-align: center;
+								z-index: 30;
+								font: 13px/120px 'g마켓 산스 ttf';
+								color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,551 @@
+#community {
+	width: 100%;
+	.intro {
+		width: 100%;
+		height: 800px;
+		background-color: #eef4f1;
+		.loader {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 2rem;
+			color: #333;
+			position: relative;
+			span {
+				animation: blur 4s infinite;
+				margin: 0.7rem;
+				&:nth-of-type(1) {
+					animation-delay: 0s;
+				}
+				&:nth-of-type(2) {
+					animation-delay: 0.4s;
+				}
+				&:nth-of-type(3) {
+					animation-delay: 0.8s;
+				}
+				&:nth-of-type(4) {
+					animation-delay: 1.2s;
+				}
+				&:nth-of-type(5) {
+					animation-delay: 1.4s;
+				}
+				&:nth-of-type(6) {
+					animation-delay: 1.6s;
+				}
+				&:nth-of-type(7) {
+					animation-delay: 2s;
+				}
+				&:nth-of-type(8) {
+					animation-delay: 2.4s;
+				}
+				&:nth-of-type(9) {
+					animation-delay: 2.8s;
+				}
+			}
+		}
+	}
+	.notice {
+		width: 100%;
+		height: 100vh;
+		background-color: #eef4f1;
+		position: relative;
+		padding: 80px 120px;
+		.bg_img {
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+			z-index: 5;
+			img {
+				width: 400px;
+				height: 400px;
+			}
+		}
+		.title {
+			text-align: center;
+			padding-bottom: 50px;
+			h3 {
+				font: 50px/1 'g마켓 산스 ttf';
+				color: #333;
+				padding-bottom: 15px;
+			}
+			h4 {
+				font: 25px/1 'g마켓 산스 ttf';
+				color: #333;
+			}
+		}
+		.contents {
+			padding: 60px 300px;
+			z-index: 50;
+			> li {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				border-bottom: 1px solid #333;
+				color: #333;
+				font: 18px/1 '맑은 고딕';
+				> a {
+					color: #333;
+				}
+				&:nth-of-type(1) {
+					border-top: 3px solid #333;
+					padding-top: 30px;
+					justify-content: space-around;
+					background-color: #eef4f1;
+					gap: 500px;
+					font: 23px/1 'g마켓 산스 ttf';
+				}
+				&:nth-last-child(1) {
+					border-bottom: 3px solid #333;
+					padding-bottom: 30px;
+				}
+			}
+		}
+	}
+	.online {
+		width: 100vw;
+		height: 100vh;
+		background-color: #eef4f1;
+		position: relative;
+		padding: 80px 120px;
+		.bg_img {
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+			z-index: 5;
+			img {
+				width: 400px;
+				height: 400px;
+				transform: scaleX(-1);
+			}
+		}
+		.title {
+			text-align: center;
+			padding-bottom: 50px;
+			h3 {
+				font: 50px/1 'g마켓 산스 ttf';
+				color: #333;
+				padding-bottom: 15px;
+			}
+			h4 {
+				font: 25px/1 'g마켓 산스 ttf';
+				color: #333;
+			}
+		}
+		.talk {
+			padding: 60px 300px;
+			width: 100%;
+			thead {
+				width: 100%;
+				tr {
+					width: 100%;
+					height: 50px;
+					th {
+						padding-top: 20px;
+						padding-bottom: 20px;
+						border-top: 3px solid #333;
+						border-bottom: 1px solid #333;
+						font: 23px/1 'g마켓 산스 ttf';
+					}
+				}
+			}
+			.contents {
+				width: 100%;
+				border-top: 1px solid #333;
+				tr {
+					td {
+						padding-top: 20px;
+						padding-bottom: 20px;
+						text-align: center;
+						border-bottom: 1px solid #333;
+						font: 18px/1 '맑은 고딕';
+						color: #333;
+					}
+					&:nth-last-child(1) {
+						> td {
+							border-bottom: 3px solid #333;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@keyframes blur {
+	0% {
+		filter: blur(0);
+	}
+	25% {
+		filter: blur(1px);
+	}
+	50% {
+		filter: blur(5px);
+	}
+	75% {
+		filter: blur(1px);
+	}
+	100% {
+		filter: blur(0);
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#community {
+		width: 100%;
+		.intro {
+			width: 100%;
+			height: calc(100vh - 100px);
+			background-color: #eef4f1;
+			.loader {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 2rem;
+				color: #333;
+				position: relative;
+				span {
+					animation: blur 4s infinite;
+					margin: 0.7rem;
+					&:nth-of-type(1) {
+						animation-delay: 0s;
+					}
+					&:nth-of-type(2) {
+						animation-delay: 0.4s;
+					}
+					&:nth-of-type(3) {
+						animation-delay: 0.8s;
+					}
+					&:nth-of-type(4) {
+						animation-delay: 1.2s;
+					}
+					&:nth-of-type(5) {
+						animation-delay: 1.4s;
+					}
+					&:nth-of-type(6) {
+						animation-delay: 1.6s;
+					}
+					&:nth-of-type(7) {
+						animation-delay: 2s;
+					}
+					&:nth-of-type(8) {
+						animation-delay: 2.4s;
+					}
+					&:nth-of-type(9) {
+						animation-delay: 2.8s;
+					}
+				}
+			}
+		}
+		.notice {
+			width: 100%;
+			height: 100vh;
+			background-color: #eef4f1;
+			position: relative;
+			.bg_img {
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+				z-index: 5;
+				img {
+					width: 300px;
+					height: 300px;
+				}
+			}
+			.title {
+				text-align: center;
+				padding-bottom: 10px;
+				h3 {
+					font: 40px/1 'g마켓 산스 ttf';
+					color: #333;
+					padding-bottom: 30px;
+				}
+				h4 {
+					font: 20px/1 'g마켓 산스 ttf';
+					color: #333;
+					padding-bottom: 50px;
+				}
+			}
+			.contents {
+				padding: 10px;
+				> li {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					border-bottom: 1px solid #333;
+					color: #333;
+					font: 14px/1 '맑은 고딕';
+					> a {
+						color: #333;
+					}
+					&:nth-of-type(1) {
+						border-top: 3px solid #333;
+						padding-top: 30px;
+						justify-content: space-around;
+						background-color: #eef4f1;
+						gap: 200px;
+						font: 20px/1 'g마켓 산스 ttf';
+					}
+					&:nth-last-child(1) {
+						border-bottom: 3px solid #333;
+						padding-bottom: 30px;
+					}
+				}
+			}
+		}
+		.online {
+			width: 100vw;
+			height: 100vh;
+			background-color: #eef4f1;
+			position: relative;
+			padding: 80px 120px;
+			.bg_img {
+				position: absolute;
+				bottom: 10px;
+				left: 10px;
+				z-index: 5;
+				img {
+					width: 300px;
+					height: 300px;
+					transform: scaleX(-1);
+				}
+			}
+			.title {
+				text-align: center;
+				padding-bottom: 50px;
+				h3 {
+					font: 40px/1 'g마켓 산스 ttf';
+					color: #333;
+					padding-bottom: 15px;
+				}
+				h4 {
+					font: 20px/1 'g마켓 산스 ttf';
+					color: #333;
+				}
+			}
+			.talk {
+				padding: 60px 300px;
+				width: 100%;
+				thead {
+					width: 100%;
+					tr {
+						width: 100%;
+						height: 50px;
+						th {
+							padding-top: 20px;
+							padding-bottom: 20px;
+							border-top: 3px solid #333;
+							border-bottom: 1px solid #333;
+							font: 20px/1 'g마켓 산스 ttf';
+						}
+					}
+				}
+				.contents {
+					width: 100%;
+					border-top: 1px solid #333;
+					tr {
+						td {
+							padding-top: 20px;
+							padding-bottom: 20px;
+							text-align: center;
+							border-bottom: 1px solid #333;
+							font: 15px/1 '맑은 고딕';
+							color: #333;
+						}
+						&:nth-last-child(1) {
+							> td {
+								border-bottom: 3px solid #333;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 428px) {
+	#community {
+		width: 100%;
+		.intro {
+			width: 100%;
+			height: calc(100vh - 100px);
+			background-color: #eef4f1;
+			.loader {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 2rem;
+				color: #333;
+				position: relative;
+				span {
+					animation: blur 4s infinite;
+					margin: 0.7rem;
+					&:nth-of-type(1) {
+						animation-delay: 0s;
+					}
+					&:nth-of-type(2) {
+						animation-delay: 0.4s;
+					}
+					&:nth-of-type(3) {
+						animation-delay: 0.8s;
+					}
+					&:nth-of-type(4) {
+						animation-delay: 1.2s;
+					}
+					&:nth-of-type(5) {
+						animation-delay: 1.4s;
+					}
+					&:nth-of-type(6) {
+						animation-delay: 1.6s;
+					}
+					&:nth-of-type(7) {
+						animation-delay: 2s;
+					}
+					&:nth-of-type(8) {
+						animation-delay: 2.4s;
+					}
+					&:nth-of-type(9) {
+						animation-delay: 2.8s;
+					}
+				}
+			}
+		}
+		.notice {
+			width: 100%;
+			height: 100vh;
+			padding: 100px 70px;
+			background-color: #eef4f1;
+			position: relative;
+			.bg_img {
+				position: absolute;
+				bottom: 100px;
+				right: 10px;
+				z-index: 5;
+				img {
+					width: 200px;
+					height: 200px;
+				}
+			}
+			.title {
+				text-align: center;
+				padding-bottom: 10px;
+				h3 {
+					font: 40px/1 'g마켓 산스 ttf';
+					color: #333;
+					padding-bottom: 30px;
+				}
+				h4 {
+					font: 20px/1 'g마켓 산스 ttf';
+					color: #333;
+					padding-bottom: 50px;
+				}
+			}
+			.contents {
+				padding: 0px;
+				> li {
+					width: 300px;
+					display: flex;
+					justify-content: space-between;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					border-bottom: 1px solid #333;
+					color: #333;
+					font: 12px/1 '맑은 고딕';
+					> a {
+						color: #333;
+					}
+					&:nth-of-type(1) {
+						border-top: 3px solid #333;
+						padding-top: 30px;
+						justify-content: space-around;
+						background-color: #eef4f1;
+						gap: 80px;
+						font: 20px/1 'g마켓 산스 ttf';
+					}
+					&:nth-last-child(1) {
+						border-bottom: 3px solid #333;
+						padding-bottom: 30px;
+					}
+				}
+			}
+		}
+		.online {
+			width: 100vw;
+			height: 100vh;
+			background-color: #eef4f1;
+			position: relative;
+			padding: 30px;
+			.bg_img {
+				position: absolute;
+				bottom: 50px;
+				left: 10px;
+				z-index: 5;
+				img {
+					width: 300px;
+					height: 300px;
+					transform: scaleX(-1);
+				}
+			}
+			.title {
+				text-align: center;
+				padding-bottom: 50px;
+				h3 {
+					font: 40px/1 'g마켓 산스 ttf';
+					color: #333;
+					padding-bottom: 15px;
+				}
+				h4 {
+					font: 20px/1 'g마켓 산스 ttf';
+					color: #333;
+				}
+			}
+			.talk {
+				padding: 60px 300px;
+				width: 100%;
+				thead {
+					width: 100%;
+					tr {
+						width: 100%;
+						height: 50px;
+						th {
+							padding-top: 20px;
+							padding-bottom: 20px;
+							border-top: 3px solid #333;
+							border-bottom: 1px solid #333;
+							font: 18px/1 'g마켓 산스 ttf';
+						}
+					}
+				}
+				.contents {
+					width: 100%;
+					border-top: 1px solid #333;
+					tr {
+						td {
+							padding-top: 20px;
+							padding-bottom: 20px;
+							text-align: center;
+							border-bottom: 1px solid #333;
+							font: 13px/1 '맑은 고딕';
+							color: #333;
+						}
+						&:nth-last-child(1) {
+							> td {
+								border-bottom: 3px solid #333;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,500 @@
+#research {
+	width: 100%;
+	.intro {
+		width: 100vw;
+		height: 100vh;
+		background-image: url(/img/research/구강연구소-배경.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 30px;
+		.research_txt {
+			width: 50%;
+			padding: 100px 80px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			.title {
+				h3 {
+					font: bold 60px/1 'g마켓 산스 ttf';
+					color: #333;
+					padding-bottom: 10px;
+				}
+				h4 {
+					font: bold 60px/1 'g마켓 산스 ttf';
+					color: #333;
+					padding-bottom: 30px;
+				}
+			}
+			.contents {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				gap: 10px;
+				span {
+					font: 20px/1 '맑은 고딕';
+					color: #333;
+				}
+			}
+		}
+		.card {
+			width: 80%;
+			display: flex;
+			justify-content: space-between;
+
+			img {
+				width: 240px;
+				height: 360px;
+				transition: all 2s;
+				&:nth-of-type(1) {
+					transform: rotate(-45deg) translate(50%, 25%);
+				}
+				&:nth-of-type(2) {
+					transform: translate(-15%, -10%);
+				}
+				&:nth-of-type(3) {
+					transform: translate(-70%, -5%) rotate(60deg);
+				}
+				&:nth-of-type(4) {
+					transform: translate(-260%, -10%) rotate(45deg);
+				}
+				&:nth-of-type(5) {
+					transform: translate(-440%, -5%) rotate(-15deg);
+				}
+			}
+			&:hover {
+				> img {
+					&:nth-of-type(1) {
+						transform: rotate(0deg) translate(0%, 0%);
+					}
+					&:nth-of-type(2) {
+						transform: translate(0%, 0%);
+					}
+					&:nth-of-type(3) {
+						transform: translate(0%, 0%) rotate(0deg);
+					}
+					&:nth-of-type(4) {
+						transform: translate(0%, 0%) rotate(0deg);
+					}
+					&:nth-of-type(5) {
+						transform: translate(0%, 0%) rotate(0deg);
+					}
+				}
+			}
+		}
+	}
+	.project {
+		width: 100vw;
+		height: 100vh;
+		padding: 80px 80px;
+		background-color: #eef4f1;
+		.title {
+			width: 100%;
+			height: 150px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			border-bottom: 3px solid steelblue;
+			position: relative;
+			h3 {
+				font: bold 70px/1 'g마켓 산스 ttf';
+				color: #333;
+			}
+			h4 {
+				font: bold 50px/1 'g마켓 산스 ttf';
+				color: lightsteelblue;
+				opacity: 0.4;
+				position: absolute;
+				top: 50px;
+				right: 50px;
+			}
+		}
+		.contents {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.projectbox {
+				width: calc(100% / 3);
+				flex: 1;
+				padding: 40px 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				gap: 35px;
+				border-right: 3px solid steelblue;
+				&:nth-of-type(3) {
+					border-right: none;
+				}
+				h5 {
+					font: bold 50px/1 'g마켓 산스 ttf';
+					color: lightsteelblue;
+					opacity: 0.4;
+				}
+				img {
+					width: 500px;
+					height: 300px;
+					transition: all 0.8s;
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+				.contentstxt {
+					width: 80%;
+					h6 {
+						font: bold 20px/1 '맑은 고딕';
+						color: #333;
+						padding-bottom: 10px;
+					}
+					span {
+						font: 18px/1.3 '맑은 고딕';
+						color: #333;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#research {
+		width: 100%;
+		.intro {
+			width: 100vw;
+			height: 100vh;
+			background-image: url(/img/research/구강연구소-배경2.jpg);
+			background-attachment: fixed;
+			background-repeat: repeat;
+			background-size: contain;
+			padding: 10px;
+			.research_txt {
+				width: 100%;
+				padding: 50px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				.title {
+					display: flex;
+					flex-direction: row;
+					padding-bottom: 30px;
+					h3 {
+						font: bold 30px/1 'g마켓 산스 ttf';
+						color: #333;
+						padding-bottom: 0;
+						padding-right: 10px;
+					}
+					h4 {
+						font: bold 30px/1 'g마켓 산스 ttf';
+						color: #333;
+						padding-bottom: 0;
+					}
+				}
+				.contents {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					padding-bottom: 30px;
+					gap: 10px;
+					span {
+						font: 16px/1 '맑은 고딕';
+						color: #333;
+					}
+				}
+			}
+			.card {
+				width: 600px;
+				display: flex;
+				justify-content: space-between;
+				gap: 10px;
+				padding-top: 300px;
+				img {
+					width: 120px;
+					height: 180px;
+					transition: all 2s;
+					&:nth-of-type(1) {
+						transform: rotate(-45deg) translate(50%, 25%);
+					}
+					&:nth-of-type(2) {
+						transform: translate(-15%, -10%);
+					}
+					&:nth-of-type(3) {
+						transform: translate(-70%, -5%) rotate(60deg);
+					}
+					&:nth-of-type(4) {
+						transform: translate(-260%, -10%) rotate(45deg);
+					}
+					&:nth-of-type(5) {
+						transform: translate(-440%, -5%) rotate(-15deg);
+					}
+				}
+				&:hover {
+					> img {
+						&:nth-of-type(1) {
+							transform: rotate(0deg) translate(0%, 0%);
+						}
+						&:nth-of-type(2) {
+							transform: translate(0%, 0%);
+						}
+						&:nth-of-type(3) {
+							transform: translate(0%, 0%) rotate(0deg);
+						}
+						&:nth-of-type(4) {
+							transform: translate(0%, 0%) rotate(0deg);
+						}
+						&:nth-of-type(5) {
+							transform: translate(0%, 0%) rotate(0deg);
+						}
+					}
+				}
+			}
+		}
+		.project {
+			width: 100vw;
+			height: 100vh;
+			padding: 20px;
+			background-color: #eef4f1;
+			.title {
+				width: 100%;
+				height: 100px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				border-bottom: 3px solid steelblue;
+				position: relative;
+				h3 {
+					font: bold 50px/1 'g마켓 산스 ttf';
+					color: #333;
+				}
+				h4 {
+					font: bold 30px/1 'g마켓 산스 ttf';
+					color: lightsteelblue;
+					opacity: 0.4;
+					position: absolute;
+					top: 20px;
+					right: 0px;
+				}
+			}
+			.contents {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.projectbox {
+					width: calc(100% / 3);
+					height: 60%;
+					flex: 1;
+					padding: 40px 0;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+					gap: 35px;
+					border-right: 3px solid steelblue;
+					&:nth-of-type(3) {
+						border-right: none;
+						padding-bottom: 60px;
+					}
+					h5 {
+						font: bold 50px/1 'g마켓 산스 ttf';
+						color: lightsteelblue;
+						opacity: 0.4;
+					}
+					img {
+						width: 200px;
+						height: 120px;
+						transition: all 0.8s;
+						&:hover {
+							transform: scale(1.1);
+						}
+					}
+					.contentstxt {
+						width: 80%;
+						h6 {
+							font: bold 18px/1 '맑은 고딕';
+							color: #333;
+							padding-bottom: 10px;
+						}
+						span {
+							font: 16px/1.3 '맑은 고딕';
+							color: #333;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 428px) {
+	#research {
+		width: 100%;
+		.intro {
+			width: 100vw;
+			height: 100vh;
+			background-image: url(/img/research/구강연구소-배경2.jpg);
+			background-attachment: fixed;
+			background-repeat: repeat;
+			background-size: contain;
+			padding: 10px;
+			.research_txt {
+				width: 100%;
+				padding: 50px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				.title {
+					display: flex;
+					flex-direction: row;
+					padding-bottom: 15px;
+					h3 {
+						font: bold 18px/1 'g마켓 산스 ttf';
+						color: #333;
+						padding-bottom: 0;
+						padding-right: 5px;
+					}
+					h4 {
+						font: bold 18px/1 'g마켓 산스 ttf';
+						color: #333;
+						padding-bottom: 0;
+					}
+				}
+				.contents {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+					padding-bottom: 30px;
+					gap: 10px;
+					span {
+						font: 13px/1 '맑은 고딕';
+						color: #333;
+					}
+				}
+			}
+			.card {
+				width: 600px;
+				display: flex;
+				justify-content: space-between;
+				gap: 10px;
+				padding-top: 200px;
+				padding-left: 20px;
+				img {
+					width: 120px;
+					height: 180px;
+					transition: all 2s;
+					&:nth-of-type(1) {
+						transform: rotate(-45deg) translate(50%, 25%);
+					}
+					&:nth-of-type(2) {
+						transform: translate(-15%, -10%);
+					}
+					&:nth-of-type(3) {
+						transform: translate(-70%, -5%) rotate(60deg);
+					}
+					&:nth-of-type(4) {
+						transform: translate(-260%, -10%) rotate(45deg);
+					}
+					&:nth-of-type(5) {
+						transform: translate(-440%, -5%) rotate(-15deg);
+					}
+				}
+				&:hover {
+					> img {
+						&:nth-of-type(1) {
+							transform: rotate(0deg) translate(0%, 0%);
+						}
+						&:nth-of-type(2) {
+							transform: translate(0%, 0%);
+						}
+						&:nth-of-type(3) {
+							transform: translate(0%, 0%) rotate(0deg);
+						}
+						&:nth-of-type(4) {
+							transform: translate(-325%, -105%) rotate(0deg);
+						}
+						&:nth-of-type(5) {
+							transform: translate(-325%, -105%) rotate(0deg);
+						}
+					}
+				}
+			}
+		}
+		.project {
+			width: 100vw;
+			height: 100vh;
+			padding: 20px;
+			background-color: #eef4f1;
+			.title {
+				width: 100%;
+				height: 100px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				border-bottom: 3px solid steelblue;
+				position: relative;
+				h3 {
+					font: bold 30px/1 'g마켓 산스 ttf';
+					color: #333;
+				}
+				h4 {
+					font: bold 20px/1 'g마켓 산스 ttf';
+					color: lightsteelblue;
+					opacity: 0.4;
+					position: absolute;
+					top: 35px;
+					right: 0px;
+				}
+			}
+			.contents {
+				width: 100%;
+				height: 600px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.projectbox {
+					width: calc(100% / 3);
+					height: 100%;
+					flex: 1;
+					padding: 20px 0;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+					gap: 35px;
+					border-right: 3px solid steelblue;
+					&:nth-of-type(2) {
+						padding-bottom: 25px;
+					}
+					&:nth-of-type(3) {
+						border-right: none;
+						padding-bottom: 82.5px;
+					}
+					h5 {
+						font: bold 50px/1 'g마켓 산스 ttf';
+						color: lightsteelblue;
+						opacity: 0.4;
+					}
+					img {
+						width: 120px;
+						height: 72px;
+						transition: all 0.8s;
+						&:hover {
+							transform: scale(1.1);
+						}
+					}
+					.contentstxt {
+						width: 80%;
+						h6 {
+							font: bold 16px/1 '맑은 고딕';
+							color: #333;
+							padding-bottom: 10px;
+						}
+						span {
+							font: 14px/1.3 '맑은 고딕';
+							color: #333;
+						}
+					}
+				}
+			}
+		}
+	}
+}

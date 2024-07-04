@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="./script/jquery-3.5.1.min.js"></script>
+		<script defer src="./script/script.js"></script>
+		<script defer src="./script/community.js"></script>
+		<script
+			src="https://kit.fontawesome.com/c12878d3ba.js"
+			crossorigin="anonymous"
+		></script>
+		<script
+			type="text/javascript"
+			src="//dapi.kakao.com/v2/maps/sdk.js?appkey=93c953ae8ea4c4c42d4c09f21bc4d542"
+		></script>
+		<script defer src="./script/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	</head>
+	<body>
+		<section class="header">
+			<div class="header_logo">
+				<h1>
+					<a href="index.html"
+						><img src="./img/logo.png" alt="사과나무치과의 로고"
+					/></a>
+				</h1>
+			</div>
+			<div class="gnb">
+				<ul class="menu1">
+					<li>
+						<a href="./appletree.html">사과나무</a>
+						<ul class="subgnb">
+							<li><a href="./appletree.html">사과나무의 특별함</a></li>
+							<li><a href="./appletree.html">의료진 소개</a></li>
+							<li><a href="./appletree.html">오시는 길</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="./dentalclinic.html">치료서비스</a>
+						<ul class="subgnb">
+							<li><a href="./dentalclinic.html">임플란트</a></li>
+							<li><a href="./dentalclinic.html">치아교정</a></li>
+							<li><a href="./dentalclinic.html">예방관리</a></li>
+							<li><a href="./dentalclinic.html">구강외과/내과</a></li>
+							<li><a href="./dentalclinic.html">일반진료</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="menu2">
+					<li>
+						<a href="./research.html">구강건강연구소</a>
+						<ul class="subgnb">
+							<li><a href="./research.html">연구소 소개</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="./community.html">커뮤니티</a>
+						<ul class="subgnb">
+							<li><a href="./community.html">사과나무 소식</a></li>
+							<li><a href="./community.html">온라인 상담</a></li>
+							<li><a href="./community.html">사과나무 유튜브</a></li>
+							<li><a href="./community.html">사과나무 이벤트</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="quick">
+			<div class="bar1">
+				<a href="#" class="box">
+					<img src="./img/icon/카카오톡.png" alt="카카오톡 아이콘" />
+					<span>채팅상담</span>
+				</a>
+				<a href="#" class="box">
+					<img src="./img/icon/네이버-예약.png" alt="온라인 예약" />
+					<span>온라인예약</span>
+				</a>
+				<a href="#" class="box">
+					<img src="./img/icon/유튜브.png" alt="유튜브 아이콘" />
+					<span>유튜브</span>
+				</a>
+				<a href="#" class="box">
+					<img src="./img/icon/blog.png" alt="블로그 아이콘" />
+					<span>블로그</span>
+				</a>
+				<a href="#" class="box">
+					<img src="./img/icon/오시는 길.png" alt="위치 아이콘" />
+					<span>오시는길</span>
+				</a>
+			</div>
+			<div class="bar2">
+				<a href="#">
+					<img src="./img/icon/메뉴 화살표.png" alt="화살표" />
+					<span>TOP</span>
+				</a>
+			</div>
+		</section>
+		<div id="community">
+			<div class="intro">
+				<div class="loader">
+					<span>C</span>
+					<span>O</span>
+					<span>M</span>
+					<span>M</span>
+					<span>U</span>
+					<span>N</span>
+					<span>I</span>
+					<span>T</span>
+					<span>Y</span>
+				</div>
+			</div>
+			<div class="notice">
+				<div class="bg_img">
+					<img src="./img/커뮤니티/사과나무.png" alt="사과나무" />
+				</div>
+				<div class="title">
+					<h3>사과나무 소식</h3>
+					<h4>공지사항</h4>
+				</div>
+				<ul class="contents">
+					<li><a href="#">내용</a><span>날짜</span></li>
+					<li>
+						<a href="#">사과나무치과병원 6월 전체 회의</a
+						><span>2024-06-01</span>
+					</li>
+					<li>
+						<a href="#">사과나무치과병원 5월 전체 회의</a
+						><span>2024-05-01</span>
+					</li>
+					<li><a href="#">환자분들께 드리는 약속</a><span>2024-01-01</span></li>
+					<li><a href="#">신입치위생사 채용</a><span>2024-03-03</span></li>
+					<li>
+						<a href="#">코로나바이러스 소독 안내</a><span>2022-06-01</span>
+					</li>
+				</ul>
+			</div>
+			<div class="online">
+				<div class="bg_img">
+					<img src="./img/커뮤니티/사과나무.png" alt="사과나무" />
+				</div>
+				<div class="title">
+					<h3>온라인 상담</h3>
+				</div>
+				<table class="talk">
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">제목</th>
+							<th scope="col">글쓴이</th>
+							<th scope="col">날짜</th>
+						</tr>
+					</thead>
+					<tbody class="contents">
+						<tr>
+							<td>04</td>
+							<td>충치치료 문의</td>
+							<td>구현성</td>
+							<td>2024-07-09</td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>교정 문의</td>
+							<td>김지원</td>
+							<td>2024-07-07</td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>임플란트 문의</td>
+							<td>김지혜</td>
+							<td>2024-06-02</td>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>보철관련 상담</td>
+							<td>류춘희</td>
+							<td>2024-05-07</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<section id="footer">
+			<div id="left">
+				<div class="wrap">
+					<div class="address">
+						<h3>주소</h3>
+						<h4>경기 부천시 원미구 부천로 57-1 사과나무치과병원</h4>
+						<div class="traffic">
+							<h5>
+								버스 : 12, 70-2, 71, 75, 8, 5-3, 5-4(시내버스) 606,
+								661(간선버스)
+							</h5>
+							<h6>지하철 : 1호선 부천역 이용(북부역에서 도보 8분 소요)</h6>
+						</div>
+					</div>
+					<div class="time">
+						<h3>진료시간</h3>
+						<div class="box_wrap">
+							<div class="box">
+								<span class="day">월 / 금(mon, fri)</span>
+								<span class="time">09:30 - 18:30</span>
+							</div>
+							<div class="box">
+								<span class="day">화 / 수 / 목(tue - thurs)</span>
+								<span class="time">09:30 - 20:30 (야간진료)</span>
+							</div>
+							<div class="box">
+								<span class="day">토요일(sat)</span>
+								<span class="time">09:00 - 16:00</span>
+							</div>
+							<div class="box">
+								<span class="day">점심시간(lunch)</span>
+								<span class="time">점심시간 없이 연속진료</span>
+							</div>
+							<div class="box">
+								<span class="close">휴진(closed)</span>
+								<span class="close">일요일 / 공휴일(sun/public holiday)</span>
+							</div>
+						</div>
+					</div>
+					<div class="telephone">
+						<h2>상담 및 문의</h2>
+						<div class="tele_content">
+							<h3>032-667-2800</h3>
+							<button type="button" class="callme">상담/문의하기 +</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="left_button">
+				<img src="./img/icon/화살표.png" alt="우측을 가리키는 화살표" />
+			</div>
+			<div id="right">
+				<div id="map"></div>
+			</div>
+		</section>
+	</body>
+</html>

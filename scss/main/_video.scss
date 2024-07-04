@@ -1,0 +1,265 @@
+#video {
+	width: 100vw;
+	height: 100vh;
+	background-color: #eef4f1;
+	position: relative;
+	.title {
+		position: absolute;
+		top: 60px;
+		left: 40px;
+		opacity: 0.1;
+		h3 {
+			font: bold 80px/1.3 'g마켓 산스 ttf';
+			color: #333;
+		}
+	}
+	.txt {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		top: 60px;
+		left: 40px;
+		p {
+			font: 40px/1 'g마켓 산스 ttf';
+			color: #333;
+			padding-bottom: 20px;
+		}
+	}
+	.inner {
+		width: 1080px;
+		height: 360px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 30;
+		.vidlist {
+			width: 1080px;
+			height: 360px;
+			display: flex;
+			flex-wrap: wrap;
+			article {
+				width: 360px;
+				height: 180px;
+				border: 1px solid #555;
+				.pic {
+					display: block;
+					width: 360px;
+					height: 180px;
+					> img {
+						width: 360px;
+						height: 180px;
+						object-fit: cover;
+					}
+				}
+			}
+			.pop {
+				width: 1280px;
+				height: 720px;
+				position: fixed;
+				top: 70%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				.btnClose {
+					position: absolute;
+					right: -55px;
+					font: 40px/55px 'g마켓 산스 ttf';
+					width: 50px;
+					height: 50px;
+					background-color: #333;
+					border-radius: 50%;
+					color: #fff;
+					text-align: center;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	.apple {
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#video {
+		width: 100vw;
+		height: 100vh;
+		background-color: #eef4f1;
+		position: relative;
+		.title {
+			position: absolute;
+			top: 80px;
+			right: 0px;
+			opacity: 0.1;
+			h3 {
+				font: bold 50px/1.3 'g마켓 산스 ttf';
+				color: #333;
+			}
+		}
+		.txt {
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			top: 60px;
+			left: 40px;
+			p {
+				font: 40px/1 'g마켓 산스 ttf';
+				color: #333;
+				padding-bottom: 20px;
+			}
+		}
+		.inner {
+			width: 540px;
+			height: 360px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 30;
+			.vidlist {
+				width: 648px;
+				height: 180px;
+				display: flex;
+				flex-wrap: wrap;
+				article {
+					width: 180px;
+					height: 90px;
+					border: 1px solid #555;
+					.pic {
+						display: block;
+						width: 180px;
+						height: 90px;
+						> img {
+							width: 180px;
+							height: 90px;
+							object-fit: cover;
+						}
+					}
+				}
+				.pop {
+					width: 640px;
+					height: 360px;
+					position: fixed;
+					top: 30%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					.btnClose {
+						position: absolute;
+						top: -60px;
+						right: 10px;
+						font: 40px/55px 'g마켓 산스 ttf';
+						width: 50px;
+						height: 50px;
+						background-color: #333;
+						border-radius: 50%;
+						color: #fff;
+						text-align: center;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		.apple {
+			position: absolute;
+			bottom: 100px;
+			right: 0px;
+			> img {
+				width: 300px;
+				height: 300px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 428px) {
+	#video {
+		width: 100vw;
+		height: 100vh;
+		background-color: #eef4f1;
+		position: relative;
+		.title {
+			position: absolute;
+			top: 80px;
+			right: 0px;
+			opacity: 0.1;
+			h3 {
+				font: bold 50px/1.3 'g마켓 산스 ttf';
+				color: #333;
+			}
+		}
+		.txt {
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			top: 60px;
+			left: 40px;
+			p {
+				font: 40px/1 'g마켓 산스 ttf';
+				color: #333;
+				padding-bottom: 20px;
+			}
+		}
+		.inner {
+			width: 360px;
+			height: 270px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 30;
+			.vidlist {
+				width: 360px;
+				height: 270px;
+				display: flex;
+				flex-wrap: wrap;
+				article {
+					width: 180px;
+					height: 90px;
+					border: 1px solid #555;
+					.pic {
+						display: block;
+						width: 180px;
+						height: 90px;
+						> img {
+							width: 180px;
+							height: 90px;
+							object-fit: cover;
+						}
+					}
+				}
+				.pop {
+					width: 384px;
+					height: 216px;
+					position: fixed;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					.btnClose {
+						position: absolute;
+						top: -60px;
+						right: 10px;
+						font: 40px/55px 'g마켓 산스 ttf';
+						width: 50px;
+						height: 50px;
+						background-color: #333;
+						border-radius: 50%;
+						color: #fff;
+						text-align: center;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		.apple {
+			position: absolute;
+			bottom: 50px;
+			right: 0px;
+			> img {
+				width: 200px;
+				height: 200px;
+			}
+		}
+	}
+}

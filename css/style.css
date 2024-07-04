@@ -23,158 +23,1021 @@ table {
   border-collapse: collapse;
 }
 
-#header {
+.header {
   width: 100%;
   height: 120px;
   display: flex;
+  position: relative;
 }
-#header .header_logo {
+.header .header_logo {
   width: 100%;
   height: 100%;
   margin: 0 auto;
   background-color: #333;
 }
-#header .header_logo h1 {
+.header .header_logo h1 {
   width: 300px;
   height: 100%;
   margin: 0 auto;
 }
-#header .header_logo h1 a {
+.header .header_logo h1 a {
   width: 100%;
   height: 55px;
   display: block;
   padding: 30px 0px;
 }
-#header .header_logo h1 a img {
+.header .header_logo h1 a img {
   width: 291px;
   height: 55px;
 }
-
-.menu .btnCall {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  z-index: 30;
-}
-.menu .btnCall img {
-  width: 50px;
-  height: 50px;
-}
-.menu .menuMo {
-  width: 100%;
-  height: 100vh;
+.header .gnb .menu1 {
   position: absolute;
   top: 0;
   left: 0;
-  visibility: hidden;
   z-index: 30;
 }
-.menu .menuMo .inner1 {
-  width: 30%;
-  height: 100%;
-  padding: 20px;
+.header .gnb .menu1 > li {
+  float: left;
+}
+.header .gnb .menu1 > li > a {
+  display: block;
+  width: 350px;
+  height: 120px;
+  text-align: center;
+  font: 20px/120px "맑은 고딕";
+  color: #fff;
+}
+.header .gnb .menu1 > li > a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+.header .gnb .menu1 > li .subgnb {
+  position: relative;
+  left: 100px;
+}
+.header .gnb .menu1 > li .subgnb > li {
+  display: none;
+}
+.header .gnb .menu1 > li .subgnb > li > a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-color: #333;
+  font: 16px/40px "맑은 고딕";
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+.header .gnb .menu1 > li .subgnb > li > a:hover {
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+}
+.header .gnb .menu2 {
   position: absolute;
   top: 0;
-  left: -30%;
-  background-color: #333;
-  opacity: 1;
-  transition: all 1s;
+  left: 1200px;
+  z-index: 30;
 }
-.menu .menuMo .inner1 h1 {
-  width: 100%;
-  padding: 30px;
-  margin-bottom: 20px;
-}
-.menu .menuMo .inner1 h1 a {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.menu .menuMo .inner1 h1 a img {
-  width: 291px;
-  height: 55px;
-}
-.menu .menuMo .inner1 .gnb_Mo {
-  width: 100%;
-  margin-bottom: 20px;
-  position: relative;
-}
-.menu .menuMo .inner1 .gnb_Mo > li {
-  width: 50%;
-  padding: 25px;
+.header .gnb .menu2 > li {
   float: left;
+}
+.header .gnb .menu2 > li > a {
+  display: block;
+  width: 350px;
+  height: 120px;
   text-align: center;
-}
-.menu .menuMo .inner1 .gnb_Mo > li > a {
-  width: 100%;
-  display: block;
-  padding: 15px;
-  font: bold 20px/1 "Noto sans KR";
-  color: #fff;
-  border-bottom: 1px solid #fff;
-}
-.menu .menuMo .inner1 .gnb_Mo > li .submenu {
-  width: 100%;
-  padding: 10px;
-}
-.menu .menuMo .inner1 .gnb_Mo > li .submenu > li {
-  width: 100%;
-}
-.menu .menuMo .inner1 .gnb_Mo > li .submenu > li a {
-  width: 100%;
-  display: block;
-  padding: 10px;
-  font: 15px/1 "Noto sans KR";
+  font: 20px/120px "맑은 고딕";
   color: #fff;
 }
-.menu .menuMo .inner1 .gnb_Mo > li .submenu > li:hover {
+.header .gnb .menu2 > li > a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+.header .gnb .menu2 > li .subgnb {
+  position: relative;
+  left: 100px;
+}
+.header .gnb .menu2 > li .subgnb > li {
+  display: none;
+}
+.header .gnb .menu2 > li .subgnb > li > a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  background-color: #333;
+  font: 16px/40px "맑은 고딕";
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+.header .gnb .menu2 > li .subgnb > li > a:hover {
   background-color: #fff;
-}
-.menu .menuMo .inner1 .gnb_Mo > li .submenu > li:hover a {
   color: #333;
-}
-.menu .menuMo .inner1 .icon {
-  width: 100%;
-  padding: 70px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-.menu .menuMo .inner1 .close {
-  position: absolute;
-  top: 15px;
-  right: 25px;
-  font-size: 35px;
-  color: #fff;
-}
-.menu .menuMo .inner2 {
-  width: 70%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  right: -70%;
-  background-color: #fff;
-  opacity: 0.9;
-  transition: all 1s;
-}
-.menu .menuMo.on {
-  visibility: visible;
-  z-index: 15;
-}
-.menu .menuMo.on .inner1 {
-  left: 0%;
-}
-.menu .menuMo.on .inner2 {
-  right: 0%;
+  font-weight: bold;
 }
 
-#main {
+.quick {
+  width: 90px;
+  position: fixed;
+  top: 40%;
+  left: 10px;
+  z-index: 50;
+  animation: opacity 1s both;
+  animation-timeline: scroll(y);
+}
+.quick .bar1 {
+  width: 100%;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(#79c344, #16abe6);
+}
+.quick .bar1 .box {
+  width: 90px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  gap: 5px;
+}
+.quick .bar1 .box > img {
+  width: 50px;
+  height: 50px;
+}
+.quick .bar1 .box span {
+  font: bold 13px/1 "맑은 고딕";
+  color: #fff;
+  text-align: center;
+}
+.quick .bar2 {
+  margin-top: 20px;
+  width: 90px;
+  height: 80px;
+  background-color: #fff;
+  padding: 10px;
+}
+.quick .bar2 > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.quick .bar2 > a > img {
+  width: 40px;
+  height: 40px;
+  transform: rotate(-90deg);
+}
+.quick .bar2 > a span {
+  font: 15px/1 "맑은 고딕";
+  color: #333;
+}
+.quick .bar2:hover {
+  background-color: #16abe6;
+}
+.quick .bar2:hover > a span {
+  color: #fff;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+  }
+  .header .header_logo {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #333;
+  }
+  .header .header_logo h1 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .header .header_logo h1 a {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100px;
+  }
+  .header .header_logo h1 a img {
+    width: 145.5px;
+    height: 27.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .gnb {
+    display: none;
+  }
+  .header .gnb .menu1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+  }
+  .header .gnb .menu1 > li {
+    float: left;
+  }
+  .header .gnb .menu1 > li > a {
+    display: block;
+    width: 135px;
+    height: 100px;
+    text-align: center;
+    font: 16px/100px "맑은 고딕";
+    color: #fff;
+  }
+  .header .gnb .menu1 > li > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .header .gnb .menu1 > li .subgnb {
+    position: relative;
+    left: 20px;
+  }
+  .header .gnb .menu1 > li .subgnb > li {
+    display: none;
+  }
+  .header .gnb .menu1 > li .subgnb > li > a {
+    display: block;
+    width: 95px;
+    height: 40px;
+    background-color: #333;
+    font: 11px/40px "맑은 고딕";
+    color: #fff;
+    text-align: center;
+  }
+  .header .gnb .menu1 > li .subgnb > li > a:hover {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+  }
+  .header .gnb .menu2 {
+    position: absolute;
+    top: 0;
+    left: 410px;
+    z-index: 30;
+  }
+  .header .gnb .menu2 > li {
+    float: left;
+  }
+  .header .gnb .menu2 > li > a {
+    display: block;
+    width: 135px;
+    height: 100px;
+    text-align: center;
+    font: 16px/100px "맑은 고딕";
+    color: #fff;
+  }
+  .header .gnb .menu2 > li > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .header .gnb .menu2 > li .subgnb {
+    position: relative;
+    left: 20px;
+  }
+  .header .gnb .menu2 > li .subgnb > li {
+    display: none;
+  }
+  .header .gnb .menu2 > li .subgnb > li > a {
+    display: block;
+    width: 95px;
+    height: 40px;
+    background-color: #333;
+    font: 11px/40px "맑은 고딕";
+    color: #fff;
+    text-align: center;
+  }
+  .header .gnb .menu2 > li .subgnb > li > a:hover {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+  }
+  .quick {
+    width: 540px;
+    height: 90px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    top: auto;
+    bottom: 10px;
+    z-index: 50;
+    animation: opacity 1s both;
+    animation-timeline: scroll(y);
+  }
+  .quick .bar1 {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #79c344, #16abe6);
+  }
+  .quick .bar1 .box {
+    width: 90px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+  }
+  .quick .bar1 .box > img {
+    width: 50px;
+    height: 50px;
+  }
+  .quick .bar1 .box span {
+    font: bold 13px/1 "맑은 고딕";
+    color: #fff;
+    text-align: center;
+  }
+  .quick .bar2 {
+    margin-top: 0px;
+    margin-left: 20px;
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    padding: 10px;
+  }
+  .quick .bar2 > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .quick .bar2 > a > img {
+    width: 40px;
+    height: 40px;
+    transform: rotate(-90deg);
+  }
+  .quick .bar2 > a span {
+    font: 15px/1 "맑은 고딕";
+    color: #333;
+  }
+  .quick .bar2:hover {
+    background-color: #16abe6;
+  }
+  .quick .bar2:hover > a span {
+    color: #fff;
+  }
+}
+@media screen and (max-width: 428px) {
+  .header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: relative;
+  }
+  .header .header_logo {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .header_logo h1 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .header_logo h1 a {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100px;
+  }
+  .header .header_logo h1 a img {
+    width: 116.4px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .gnb {
+    display: none;
+  }
+  .header .gnb .menu1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30;
+  }
+  .header .gnb .menu1 > li {
+    float: left;
+  }
+  .header .gnb .menu1 > li > a {
+    display: block;
+    width: 78px;
+    height: 60px;
+    text-align: center;
+    font: 10px/60px "맑은 고딕";
+    color: #fff;
+  }
+  .header .gnb .menu1 > li > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .header .gnb .menu1 > li .subgnb {
+    position: relative;
+  }
+  .header .gnb .menu1 > li .subgnb > li {
+    display: none;
+  }
+  .header .gnb .menu1 > li .subgnb > li > a {
+    display: block;
+    width: 78px;
+    height: 40px;
+    background-color: #333;
+    font: 8px/40px "맑은 고딕";
+    color: #fff;
+    text-align: center;
+  }
+  .header .gnb .menu1 > li .subgnb > li > a:hover {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+  }
+  .header .gnb .menu2 {
+    position: absolute;
+    top: 0;
+    left: 272px;
+    z-index: 30;
+  }
+  .header .gnb .menu2 > li {
+    float: left;
+  }
+  .header .gnb .menu2 > li > a {
+    display: block;
+    width: 78px;
+    height: 60px;
+    text-align: center;
+    font: 10px/60px "맑은 고딕";
+    color: #fff;
+  }
+  .header .gnb .menu2 > li > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .header .gnb .menu2 > li .subgnb {
+    position: relative;
+  }
+  .header .gnb .menu2 > li .subgnb > li {
+    display: none;
+  }
+  .header .gnb .menu2 > li .subgnb > li > a {
+    display: block;
+    width: 78px;
+    height: 40px;
+    background-color: #333;
+    font: 8px/40px "맑은 고딕";
+    color: #fff;
+    text-align: center;
+  }
+  .header .gnb .menu2 > li .subgnb > li > a:hover {
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+  }
+  .quick {
+    width: 90px;
+    position: fixed;
+    top: auto;
+    left: 0;
+    z-index: 50;
+    animation: opacity 1s both;
+    animation-timeline: scroll(y);
+  }
+  .quick .bar1 {
+    width: 100%;
+    height: 440px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(#79c344, #16abe6);
+  }
+  .quick .bar1 .box {
+    width: 90px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    gap: 5px;
+  }
+  .quick .bar1 .box > img {
+    width: 50px;
+    height: 50px;
+  }
+  .quick .bar1 .box span {
+    font: bold 13px/1 "맑은 고딕";
+    color: #fff;
+    text-align: center;
+  }
+  .quick .bar2 {
+    margin-top: 0px;
+    width: 90px;
+    height: 80px;
+    background-color: #fff;
+    padding: 10px;
+  }
+  .quick .bar2 > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .quick .bar2 > a > img {
+    width: 40px;
+    height: 40px;
+    transform: rotate(-90deg);
+  }
+  .quick .bar2 > a span {
+    font: 15px/1 "맑은 고딕";
+    color: #333;
+  }
+  .quick .bar2:hover {
+    background-color: #16abe6;
+  }
+  .quick .bar2:hover > a span {
+    color: #fff;
+  }
+}
+#footer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eef4f1;
+  position: relative;
+}
+#footer #left {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -50%;
+  background-color: #eef4f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+}
+#footer #left .wrap {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#footer #left .wrap .address {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #000;
+}
+#footer #left .wrap .address h3 {
+  font: 20px/1 "g마켓 산스 ttf";
+  color: #000;
+}
+#footer #left .wrap .address h4 {
+  font: bold 25px/1.3 "g마켓 산스 ttf";
+  color: #333;
+}
+#footer #left .wrap .address .traffic h5 {
+  font: 20px/1.3 "g마켓 산스 ttf";
+  color: #333;
+  padding-bottom: 5px;
+}
+#footer #left .wrap .address .traffic h6 {
+  font: 20px/1.3 "g마켓 산스 ttf";
+  color: #333;
+}
+#footer #left .wrap .time {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 35px;
+}
+#footer #left .wrap .time h3 {
+  font: 20px/1 "g마켓 산스 ttf";
+  color: #000;
+}
+#footer #left .wrap .time .box_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+#footer #left .wrap .time .box_wrap .box {
+  width: 700px;
+  display: flex;
+  font: 20px/1 "g마켓 산스 ttf";
+  color: #333;
+}
+#footer #left .wrap .time .box_wrap .box .day {
+  width: 50%;
+}
+#footer #left .wrap .time .box_wrap .box .time {
+  width: 50%;
+}
+#footer #left .wrap .time .box_wrap .box .close {
+  color: rgb(219, 96, 96);
+  padding-right: 10px;
+}
+#footer #left .wrap .telephone {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding-top: 30px;
+  border-top: 1px solid #000;
+}
+#footer #left .wrap .telephone h2 {
+  font: 20px/40px "g마켓 산스 ttf";
+  color: #000;
+}
+#footer #left .wrap .telephone .tele_content {
+  height: 40px;
+  display: flex;
+}
+#footer #left .wrap .telephone .tele_content h3 {
+  font: bold 30px/40px "g마켓 산스 ttf";
+  padding-right: 20px;
+}
+#footer #left .wrap .telephone .tele_content .callme {
+  width: 200px;
+  height: 40px;
+  background: linear-gradient(90deg, #79c344, #16abe6);
+  border: none;
+  font: bold 23px/40px "g마켓 산스 ttf";
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#footer .left_button {
+  position: absolute;
+  top: calc(50% - 125px);
+  left: 20px;
+  z-index: 10;
+}
+#footer #right {
+  width: 100%;
+  height: 100%;
+  padding-left: 300px;
+}
+#footer #right #map {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+}
+
+@media screen and (max-width: 700px) {
+  #footer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef4f1;
+    position: relative;
+  }
+  #footer #left {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    background-color: #eef4f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+  }
+  #footer #left .wrap {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #footer #left .wrap .address {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #000;
+  }
+  #footer #left .wrap .address h3 {
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #000;
+  }
+  #footer #left .wrap .address h4 {
+    font: bold 18px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #footer #left .wrap .address .traffic h5 {
+    font: 14px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 5px;
+  }
+  #footer #left .wrap .address .traffic h6 {
+    font: 14px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #footer #left .wrap .time {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  #footer #left .wrap .time h3 {
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #000;
+  }
+  #footer #left .wrap .time .box_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+  }
+  #footer #left .wrap .time .box_wrap .box {
+    width: 240px;
+    display: flex;
+    font: 14px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #footer #left .wrap .time .box_wrap .box .day {
+    width: 50%;
+  }
+  #footer #left .wrap .time .box_wrap .box .time {
+    width: 50%;
+  }
+  #footer #left .wrap .time .box_wrap .box .close {
+    color: rgb(219, 96, 96);
+    padding-right: 10px;
+  }
+  #footer #left .wrap .telephone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-top: 30px;
+    border-top: 1px solid #000;
+  }
+  #footer #left .wrap .telephone h2 {
+    font: 20px/40px "g마켓 산스 ttf";
+    color: #000;
+  }
+  #footer #left .wrap .telephone .tele_content {
+    height: 20px;
+    display: flex;
+  }
+  #footer #left .wrap .telephone .tele_content h3 {
+    font: bold 15px/20px "g마켓 산스 ttf";
+    padding-right: 5px;
+  }
+  #footer #left .wrap .telephone .tele_content .callme {
+    width: 130px;
+    height: 20px;
+    background: linear-gradient(90deg, #79c344, #16abe6);
+    border: none;
+    font: bold 14px/20px "g마켓 산스 ttf";
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  #footer .left_button {
+    position: absolute;
+    top: calc(50% - 125px);
+    left: 20px;
+    z-index: 10;
+  }
+  #footer .left_button > img {
+    width: 150px;
+    height: 150px;
+  }
+  #footer #right {
+    width: 100%;
+    height: 100%;
+    padding-left: 180px;
+  }
+  #footer #right #map {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+  }
+}
+@media screen and (max-width: 428px) {
+  #footer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef4f1;
+    position: relative;
+  }
+  #footer #left {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: #eef4f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+  }
+  #footer #left .wrap {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #footer #left .wrap .address {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #000;
+  }
+  #footer #left .wrap .address h3 {
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #000;
+  }
+  #footer #left .wrap .address h4 {
+    font: bold 18px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #footer #left .wrap .address .traffic h5 {
+    font: 14px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 5px;
+  }
+  #footer #left .wrap .address .traffic h6 {
+    font: 14px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #footer #left .wrap .time {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  #footer #left .wrap .time h3 {
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #000;
+  }
+  #footer #left .wrap .time .box_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+  }
+  #footer #left .wrap .time .box_wrap .box {
+    width: 240px;
+    display: flex;
+    font: 14px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #footer #left .wrap .time .box_wrap .box .day {
+    width: 50%;
+  }
+  #footer #left .wrap .time .box_wrap .box .time {
+    width: 50%;
+  }
+  #footer #left .wrap .time .box_wrap .box .close {
+    color: rgb(219, 96, 96);
+    padding-right: 10px;
+  }
+  #footer #left .wrap .telephone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-top: 30px;
+    border-top: 1px solid #000;
+  }
+  #footer #left .wrap .telephone h2 {
+    font: 20px/40px "g마켓 산스 ttf";
+    color: #000;
+  }
+  #footer #left .wrap .telephone .tele_content {
+    height: 20px;
+    display: flex;
+  }
+  #footer #left .wrap .telephone .tele_content h3 {
+    font: bold 15px/20px "g마켓 산스 ttf";
+    padding-right: 5px;
+  }
+  #footer #left .wrap .telephone .tele_content .callme {
+    width: 130px;
+    height: 20px;
+    background: linear-gradient(90deg, #79c344, #16abe6);
+    border: none;
+    font: bold 14px/20px "g마켓 산스 ttf";
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  #footer .left_button {
+    position: absolute;
+    top: calc(50% - 125px);
+    left: 5px;
+    z-index: 10;
+  }
+  #footer .left_button > img {
+    width: 50px;
+    height: 50px;
+  }
+  #footer #right {
+    width: 100%;
+    height: 100%;
+    padding-left: 70px;
+  }
+  #footer #right #map {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+  }
+}
+.main {
   width: 100%;
   height: calc(100vh - 120px);
 }
-#main .main_slidemenu {
+.main .main_slidemenu {
   width: 100%;
   height: 100%;
   display: flex;
@@ -182,7 +1045,7 @@ table {
   align-items: center;
   position: relative;
 }
-#main .main_slidemenu article {
+.main .main_slidemenu article {
   flex: 1;
   height: 100%;
   transition: all 1s;
@@ -192,35 +1055,37 @@ table {
   background-repeat: no-repeat;
   cursor: pointer;
   transition: flex 0.7s ease-in;
+  filter: grayscale(100%);
 }
-#main .main_slidemenu article.on {
+.main .main_slidemenu article.on {
   flex: 4.5;
+  filter: grayscale(0%);
 }
-#main .main_slidemenu article.on .txt {
+.main .main_slidemenu article.on .txt {
   opacity: 1;
   transition-timing-function: ease-in;
   transition-delay: 0.4s;
 }
-#main .main_slidemenu article.on .submenu {
+.main .main_slidemenu article.on .submenu {
   opacity: 1;
   transition-timing-function: ease-in;
   transition-delay: 0.4s;
 }
-#main .main_slidemenu article .txt {
+.main .main_slidemenu article .txt {
   position: absolute;
   bottom: 150px;
   left: 25px;
   opacity: 0;
 }
-#main .main_slidemenu article .txt span {
+.main .main_slidemenu article .txt span {
   font: 20px/1 "Noto sans KR";
   color: #000;
 }
-#main .main_slidemenu article .txt h2 {
+.main .main_slidemenu article .txt h2 {
   font: bold 40px/1 "Noto sans KR";
   color: #000;
 }
-#main .main_slidemenu article .submenu {
+.main .main_slidemenu article .submenu {
   position: absolute;
   bottom: 100px;
   left: 25px;
@@ -230,7 +1095,7 @@ table {
   gap: 15px;
   opacity: 0;
 }
-#main .main_slidemenu article .submenu li {
+.main .main_slidemenu article .submenu li {
   border: 3px solid #333;
   border-radius: 20px;
   text-align: center;
@@ -238,157 +1103,735 @@ table {
   position: relative;
   overflow: hidden;
 }
-#main .main_slidemenu article .submenu li a {
+.main .main_slidemenu article .submenu li a {
   width: 100%;
   height: 100%;
-  font: 15px/1 "Noto sans KR";
-  color: #fff;
+  font: bold 15px/1 "Noto sans KR";
+  color: #000;
   display: block;
 }
-#main .main_slidemenu article .submenu li::before {
+.main .main_slidemenu article .submenu li::before {
   content: "";
   display: block;
   width: 130px;
   height: 30px;
-  background-color: #ccc;
+  background-color: #fff;
   position: absolute;
   transform: translateX(-130%) translateY(-25%) skew(-45deg);
   transition: all 0.5s;
 }
-#main .main_slidemenu article .submenu li:hover::before {
+.main .main_slidemenu article .submenu li:hover::before {
   transform: translate(130%) translateY(-40%) skew(-45deg);
 }
-#main .main_slidemenu article:nth-of-type(1) {
-  background-image: url(../img/메인메뉴/동영상\ 시작\ 배경.jpeg);
+.main .main_slidemenu article:nth-of-type(1) {
+  background-image: url(/img/메인페이지/slidemenu/동영상\ 시작\ 배경.jpeg);
 }
-#main .main_slidemenu article:nth-of-type(2) {
-  background-image: url(../img/메인메뉴/b2_38.png);
+.main .main_slidemenu article:nth-of-type(2) {
+  background-image: url(/img/메인페이지/slidemenu/dental\ treatment.jpeg);
 }
-#main .main_slidemenu article:nth-of-type(3) {
+.main .main_slidemenu article:nth-of-type(3) {
   position: relative;
-  background-image: url(../img/메인메뉴/구강연구소-수정본.jpg);
+  background-image: url(/img/메인페이지/slidemenu/구강연구소-수정본.jpg);
 }
-#main .main_slidemenu article:nth-of-type(3) .txt {
+.main .main_slidemenu article:nth-of-type(3) .txt {
   position: absolute;
   bottom: auto;
   top: 15px;
   left: 25px;
 }
-#main .main_slidemenu article:nth-of-type(3) .submenu {
+.main .main_slidemenu article:nth-of-type(3) .submenu {
   position: absolute;
   bottom: auto;
   top: 90px;
   left: 25px;
 }
-#main .main_slidemenu article:nth-of-type(3) .submenu li a {
+.main .main_slidemenu article:nth-of-type(3) .submenu li a {
   color: #000;
 }
-#main .main_slidemenu article:nth-of-type(4) {
-  background-image: url(../img/메인메뉴/커뮤니티_수정본.png);
+.main .main_slidemenu article:nth-of-type(4) {
+  background-image: url(/img/메인페이지/slidemenu/커뮤니티-수정본.jpg);
 }
-#main .main_slidemenu article:nth-of-type(4) .txt span {
+.main .main_slidemenu article:nth-of-type(4) .txt span {
   color: #fff;
 }
-#main .main_slidemenu article:nth-of-type(4) .txt h2 {
+.main .main_slidemenu article:nth-of-type(4) .txt h2 {
+  color: #000;
+}
+.main .main_slidemenu article:nth-of-type(4) .submenu > li a {
   color: #fff;
 }
 
-.service_slide {
-  width: 100vw;
+@media screen and (max-width: 700px) {
+  .main {
+    width: 100%;
+    height: calc(100vh - 120px);
+  }
+  .main .main_slidemenu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main .main_slidemenu article {
+    width: 100%;
+    flex: 1;
+    transition: all 1s;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: flex 0.7s ease-in;
+    filter: grayscale(100%);
+  }
+  .main .main_slidemenu article.on {
+    flex: 2;
+    filter: grayscale(0%);
+  }
+  .main .main_slidemenu article.on .txt {
+    opacity: 1;
+    transition-timing-function: ease-in;
+    transition-delay: 0.4s;
+  }
+  .main .main_slidemenu article.on .submenu {
+    opacity: 1;
+    transition-timing-function: ease-in;
+    transition-delay: 0.4s;
+  }
+  .main .main_slidemenu article .txt {
+    position: absolute;
+    bottom: 150px;
+    left: 25px;
+    opacity: 0;
+  }
+  .main .main_slidemenu article .txt span {
+    font: 20px/1 "Noto sans KR";
+    color: #fff;
+    background-color: #333;
+  }
+  .main .main_slidemenu article .txt h2 {
+    font: bold 40px/1 "Noto sans KR";
+    color: #fff;
+  }
+  .main .main_slidemenu article .submenu {
+    position: absolute;
+    bottom: 100px;
+    left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+  }
+  .main .main_slidemenu article .submenu li {
+    border: 3px solid #333;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+  }
+  .main .main_slidemenu article .submenu li a {
+    width: 100%;
+    height: 100%;
+    font: bold 15px/1 "Noto sans KR";
+    color: #fff;
+    display: block;
+  }
+  .main .main_slidemenu article .submenu li::before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    transform: translateX(-130%) translateY(-25%) skew(-45deg);
+    transition: all 0.5s;
+  }
+  .main .main_slidemenu article .submenu li:hover::before {
+    transform: translate(130%) translateY(-40%) skew(-45deg);
+  }
+  .main .main_slidemenu article:nth-of-type(1) {
+    background-image: url(/img/메인페이지/slidemenu/동영상\ 시작\ 배경.jpeg);
+  }
+  .main .main_slidemenu article:nth-of-type(2) {
+    background-image: url(/img/메인페이지/slidemenu/dental\ treatment.jpeg);
+  }
+  .main .main_slidemenu article:nth-of-type(3) {
+    position: relative;
+    background-image: url(/img/메인페이지/slidemenu/구강연구소-수정본.jpg);
+  }
+  .main .main_slidemenu article:nth-of-type(3) .txt {
+    position: absolute;
+    bottom: 150px;
+    left: 25px;
+    top: auto;
+  }
+  .main .main_slidemenu article:nth-of-type(3) .txt span {
+    font: 20px/1.3 "Noto sans KR";
+    color: #fff;
+    background-color: #333;
+  }
+  .main .main_slidemenu article:nth-of-type(3) .submenu {
+    position: absolute;
+    bottom: auto;
+    bottom: 100px;
+    left: 25px;
+    top: auto;
+  }
+  .main .main_slidemenu article:nth-of-type(3) .submenu li a {
+    color: #fff;
+  }
+  .main .main_slidemenu article:nth-of-type(4) {
+    background-image: url(/img/메인페이지/slidemenu/커뮤니티-수정본.jpg);
+  }
+  .main .main_slidemenu article:nth-of-type(4) .txt span {
+    color: #fff;
+  }
+  .main .main_slidemenu article:nth-of-type(4) .txt h2 {
+    color: #333;
+  }
+  .main .main_slidemenu article:nth-of-type(4) .submenu > li a {
+    color: #fff;
+  }
+}
+@media screen and (max-width: 428px) {
+  .main {
+    width: 100%;
+    height: calc(100vh - 120px);
+  }
+  .main .main_slidemenu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main .main_slidemenu article {
+    width: 100%;
+    flex: 1;
+    transition: all 1s;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: flex 0.7s ease-in;
+    filter: grayscale(100%);
+  }
+  .main .main_slidemenu article.on {
+    flex: 2;
+    filter: grayscale(0%);
+  }
+  .main .main_slidemenu article.on .txt {
+    opacity: 1;
+    transition-timing-function: ease-in;
+    transition-delay: 0.4s;
+  }
+  .main .main_slidemenu article.on .submenu {
+    opacity: 1;
+    transition-timing-function: ease-in;
+    transition-delay: 0.4s;
+  }
+  .main .main_slidemenu article .txt {
+    position: absolute;
+    bottom: 150px;
+    left: 25px;
+    opacity: 0;
+  }
+  .main .main_slidemenu article .txt span {
+    font: 14px/1 "Noto sans KR";
+    color: #fff;
+    background-color: #333;
+  }
+  .main .main_slidemenu article .txt h2 {
+    font: bold 23px/1.5 "Noto sans KR";
+    color: #fff;
+  }
+  .main .main_slidemenu article .submenu {
+    position: absolute;
+    bottom: 100px;
+    left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+  }
+  .main .main_slidemenu article .submenu li {
+    border: 3px solid #333;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+  }
+  .main .main_slidemenu article .submenu li a {
+    width: 100%;
+    height: 100%;
+    font: bold 11px/1 "Noto sans KR";
+    color: #fff;
+    display: block;
+  }
+  .main .main_slidemenu article .submenu li::before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    transform: translateX(-130%) translateY(-25%) skew(-45deg);
+    transition: all 0.5s;
+  }
+  .main .main_slidemenu article .submenu li:hover::before {
+    transform: translate(130%) translateY(-40%) skew(-45deg);
+  }
+  .main .main_slidemenu article:nth-of-type(1) {
+    background-image: url(/img/메인페이지/slidemenu/동영상\ 시작\ 배경.jpeg);
+  }
+  .main .main_slidemenu article:nth-of-type(2) {
+    background-image: url(/img/메인페이지/slidemenu/dental\ treatment.jpeg);
+  }
+  .main .main_slidemenu article:nth-of-type(3) {
+    position: relative;
+    background-image: url(/img/메인페이지/slidemenu/구강연구소-수정본.jpg);
+  }
+  .main .main_slidemenu article:nth-of-type(3) .txt {
+    position: absolute;
+    bottom: 150px;
+    left: 25px;
+    top: auto;
+  }
+  .main .main_slidemenu article:nth-of-type(3) .txt span {
+    font: 14px/1 "Noto sans KR";
+    color: #fff;
+    background-color: #333;
+  }
+  .main .main_slidemenu article:nth-of-type(3) .submenu {
+    position: absolute;
+    bottom: auto;
+    bottom: 100px;
+    left: 25px;
+    top: auto;
+  }
+  .main .main_slidemenu article:nth-of-type(3) .submenu li a {
+    color: #fff;
+  }
+  .main .main_slidemenu article:nth-of-type(4) {
+    background-image: url(/img/메인페이지/slidemenu/커뮤니티-수정본.jpg);
+  }
+  .main .main_slidemenu article:nth-of-type(4) .txt span {
+    color: #fff;
+  }
+  .main .main_slidemenu article:nth-of-type(4) .txt h2 {
+    color: #333;
+  }
+  .main .main_slidemenu article:nth-of-type(4) .submenu > li a {
+    color: #fff;
+  }
+}
+#treatment {
+  width: 100%;
   height: 100vh;
+  background-color: #eef4f1;
   position: relative;
+  overflow: hidden;
 }
-.service_slide .bg_container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  visibility: hidden;
-}
-.service_slide .bg_container > li {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.service_slide .bg_container > li img {
-  width: 100%;
-  height: 100%;
-}
-.service_slide .bg_container > li.on {
-  visibility: visible;
-}
-.service_slide .service_ul {
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  transform: translateY(-500px);
-}
-.service_slide .service_ul > li {
-  width: 200px;
-  height: 400px;
-  border: 2px solid #333;
-  border-radius: 20px;
-  z-index: 15;
-}
-.service_slide .service_ul > li .li_wrap {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-}
-.service_slide .service_ul > li .li_wrap a {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.service_slide .service_ul > li .li_wrap a img {
-  width: 100%;
-  padding: 10px;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.service_slide .service_ul > li .li_wrap a .txt {
-  width: 100%;
+#treatment .txt {
+  padding: 50px 0;
   text-align: center;
 }
-.service_slide .service_ul > li .li_wrap a .txt h3 {
-  font: bold 20px/1 "Noto sans KR";
-  color: #000;
-  margin-bottom: 10px;
+#treatment .txt p {
+  font: 50px/1 "g마켓 산스 ttf";
+  color: #333;
+  padding-bottom: 20px;
 }
-.service_slide .service_ul > li .li_wrap a .txt h4 {
-  font: bold 18px/1 "Noto sans KR";
-  color: #000;
-  margin-bottom: 10px;
+#treatment .txt h3 {
+  font: 30px/1 "g마켓 산스 ttf";
+  color: #333;
 }
-.service_slide .service_ul > li .li_wrap a .txt span {
-  font: 14px/1.5 "Noto sans KR";
-  color: #000;
+#treatment .auto {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  z-index: 2;
 }
-.service_slide .service_ul > li .li_wrap a .txt span:nth-of-type(1) {
-  font-size: 13px;
+#treatment .auto li {
+  float: left;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
 }
-.service_slide .service_ul > li:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 5px 5px 5px #000;
+#treatment .swiper-button-next {
+  top: auto;
+  bottom: 50px;
+  right: 60px;
 }
-.service_slide .service_ul.on:nth-of-type(1):hover {
-  background-image: url(../img/슬라이드/구강내외과-슬라이드.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+#treatment .swiper-button-prev {
+  top: auto;
+  left: auto;
+  bottom: 50px;
+  right: 100px;
+}
+#treatment .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+#treatment .swiper-wrapper .swiper-slide {
+  width: 700px;
+  height: 700px;
+  top: 50%;
+  margin-top: -450px;
+}
+#treatment .swiper-wrapper .swiper-slide .inner {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  opacity: 0.4;
+  transition: all 1s;
+  position: relative;
+}
+#treatment .swiper-wrapper .swiper-slide .inner img {
+  width: 700px;
+  height: 400px;
+}
+#treatment .swiper-wrapper .swiper-slide .inner .box {
+  width: 600px;
+  height: 230px;
+  position: absolute;
+  padding: 30px;
+  background-color: #fff;
+  top: 360px;
+  left: 75px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#treatment .swiper-wrapper .swiper-slide .inner .box h2 {
+  font: bold 35px/1 "g마켓 산스 ttf";
+  color: #333;
+}
+#treatment .swiper-wrapper .swiper-slide .inner .box h4 {
+  font: bold 20px/1 "g마켓 산스 ttf";
+  color: #333;
+}
+#treatment .swiper-wrapper .swiper-slide .inner .box p {
+  font: normal 18px/1 "g마켓 산스 ttf";
+  color: #333;
+}
+#treatment .swiper-wrapper .swiper-slide::before, #treatment .swiper-wrapper .swiper-slide::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+#treatment .swiper-wrapper .swiper-slide-prev .inner,
+#treatment .swiper-wrapper .swiper-slide-next .inner {
+  filter: grayscale(100%);
+}
+#treatment .swiper-wrapper .swiper-slide-active .inner {
+  opacity: 1;
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.7);
+}
+#treatment .swiper-wrapper .swiper-slide-active .inner::before {
+  animation: ani 1s linear 1;
+}
+#treatment .swiper-wrapper .swiper-slide-active .inner::after {
+  animation: ani 1s 0.3s linear 1;
+}
+#treatment .swiper-pagination-bullet {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  opacity: 1;
+  background: transparent;
+  background-image: url(/img/icon/bar.png);
+  background-position: center center;
+}
+#treatment .swiper-pagination-bullet-active {
+  color: #333;
+  background: transparent;
+  background-image: url(/img/icon/bar_2.png);
+  background-position: center center;
 }
 
+@keyframes ani {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  #treatment {
+    width: 100%;
+    height: 100vh;
+    background-color: #eef4f1;
+    position: relative;
+    overflow: hidden;
+  }
+  #treatment .txt {
+    padding-top: 180px;
+    text-align: center;
+  }
+  #treatment .txt p {
+    font: 50px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 20px;
+  }
+  #treatment .txt h3 {
+    font: 30px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment .auto {
+    position: absolute;
+    bottom: 120px;
+    left: 60px;
+    z-index: 2;
+    display: none;
+  }
+  #treatment .auto li {
+    float: left;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+  }
+  #treatment .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  #treatment .swiper-wrapper .swiper-slide {
+    width: 350px;
+    height: 350px;
+    top: 60%;
+  }
+  #treatment .swiper-wrapper .swiper-slide .inner {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    opacity: 0.4;
+    transition: all 1s;
+    position: relative;
+  }
+  #treatment .swiper-wrapper .swiper-slide .inner img {
+    width: 350px;
+    height: 147.5px;
+  }
+  #treatment .swiper-wrapper .swiper-slide .inner .box {
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    padding: 15px;
+    background-color: #fff;
+    top: 150px;
+    left: 55px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #treatment .swiper-wrapper .swiper-slide .inner .box h2 {
+    font: bold 18px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment .swiper-wrapper .swiper-slide .inner .box h4 {
+    font: bold 16px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment .swiper-wrapper .swiper-slide .inner .box p {
+    font: normal 14px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment .swiper-wrapper .swiper-slide::before, #treatment .swiper-wrapper .swiper-slide::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  #treatment .swiper-wrapper .swiper-slide-prev .inner,
+  #treatment .swiper-wrapper .swiper-slide-next .inner {
+    filter: grayscale(100%);
+  }
+  #treatment .swiper-wrapper .swiper-slide-active .inner {
+    opacity: 1;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.7);
+  }
+  #treatment .swiper-wrapper .swiper-slide-active .inner::before {
+    animation: ani 1s linear 1;
+  }
+  #treatment .swiper-wrapper .swiper-slide-active .inner::after {
+    animation: ani 1s 0.3s linear 1;
+  }
+  #treatment .swiper-pagination-bullet {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    opacity: 1;
+    background: transparent;
+    background-image: url(/img/icon/bar.png);
+    background-position: center center;
+  }
+  #treatment .swiper-pagination-bullet-active {
+    color: #333;
+    background: transparent;
+    background-image: url(/img/icon/bar_2.png);
+    background-position: center center;
+  }
+}
+@media screen and (max-width: 428px) {
+  #treatment {
+    width: 100%;
+    height: 100vh;
+    background-color: #eef4f1;
+    position: relative;
+    overflow: hidden;
+  }
+  #treatment .txt {
+    padding-top: 180px;
+    text-align: center;
+  }
+  #treatment .txt p {
+    font: 50px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 20px;
+  }
+  #treatment .txt h3 {
+    font: 30px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment .auto {
+    position: absolute;
+    bottom: 100px;
+    left: 60px;
+    z-index: 2;
+    display: none;
+  }
+  #treatment .auto li {
+    float: left;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+  }
+  #treatment .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  #treatment .swiper-wrapper .swiper-slide {
+    width: 350px;
+    height: 350px;
+    top: 60%;
+  }
+  #treatment .swiper-wrapper .swiper-slide .inner {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    opacity: 0.4;
+    transition: all 1s;
+    position: relative;
+  }
+  #treatment .swiper-wrapper .swiper-slide .inner img {
+    width: 350px;
+    height: 147.5px;
+  }
+  #treatment .swiper-wrapper .swiper-slide .inner .box {
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    padding: 15px;
+    background-color: #fff;
+    top: 150px;
+    left: 55px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #treatment .swiper-wrapper .swiper-slide .inner .box h2 {
+    font: bold 18px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment .swiper-wrapper .swiper-slide .inner .box h4 {
+    font: bold 16px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment .swiper-wrapper .swiper-slide .inner .box p {
+    font: normal 14px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment .swiper-wrapper .swiper-slide::before, #treatment .swiper-wrapper .swiper-slide::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  #treatment .swiper-wrapper .swiper-slide-prev .inner,
+  #treatment .swiper-wrapper .swiper-slide-next .inner {
+    filter: grayscale(100%);
+  }
+  #treatment .swiper-wrapper .swiper-slide-active .inner {
+    opacity: 1;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.7);
+  }
+  #treatment .swiper-wrapper .swiper-slide-active .inner::before {
+    animation: ani 1s linear 1;
+  }
+  #treatment .swiper-wrapper .swiper-slide-active .inner::after {
+    animation: ani 1s 0.3s linear 1;
+  }
+  #treatment .swiper-pagination-bullet {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    opacity: 1;
+    background: transparent;
+    background-image: url(/img/icon/bar.png);
+    background-position: center center;
+  }
+  #treatment .swiper-pagination-bullet-active {
+    color: #333;
+    background: transparent;
+    background-image: url(/img/icon/bar_2.png);
+    background-position: center center;
+  }
+}
 .special {
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #eef4f1;
 }
 .special .wrap {
   width: 1500px;
@@ -421,7 +1864,7 @@ table {
 }
 .special .wrap .content .title .text p strong {
   font: 40px/1.3 "Noto sans KR";
-  color: #000;
+  color: #333;
 }
 .special .wrap .content .title .text::after {
   content: "";
@@ -431,333 +1874,3444 @@ table {
   background-color: #333;
   margin: 30px 0px 30px;
 }
-.special .wrap .content .container {
+.special .wrap .content #container {
   width: 100%;
   height: 100%;
-  display: none;
   position: absolute;
-  top: 100px;
+  top: 15%;
   left: 0;
+  z-index: 15;
 }
-.special .wrap .content .container .box {
+.special .wrap .content #container .box {
   position: absolute;
   width: 2400px;
   height: 670px;
   display: flex;
   justify-content: space-between;
-  border-radius: 10px;
-  z-index: 15;
 }
-.special .wrap .content .container .box .panel {
+.special .wrap .content #container .box .panel {
   width: 480px;
   height: 670px;
 }
-
-.panel pre.prettyprint {
-  font-size: 20px;
-  text-align: left;
-  width: auto;
-  font-weight: normal;
-  margin: 10px;
-  border: none;
+.special .wrap .content .logo {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+.special .wrap .content .logo img {
+  width: 100%;
+  height: 100%;
 }
 
-.prettyprint .linenums {
-  padding: 0;
-  list-style: none;
+@media screen and (max-width: 700px) {
+  .special {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #eef4f1;
+  }
+  .special .wrap {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .special .wrap .content {
+    width: 1500px;
+    height: 100%;
+    position: relative;
+  }
+  .special .wrap .content .title {
+    width: 400px;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .special .wrap .content .title .text {
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+  }
+  .special .wrap .content .title .text p {
+    font: normal 50px/1 "Noto sans KR";
+    color: #333;
+  }
+  .special .wrap .content .title .text p strong {
+    font: 40px/1.3 "Noto sans KR";
+    color: #333;
+  }
+  .special .wrap .content .title .text::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 2px;
+    background-color: #333;
+    margin: 30px 0px 30px;
+  }
+  .special .wrap .content #container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    z-index: 15;
+  }
+  .special .wrap .content #container .box {
+    position: absolute;
+    width: 2400px;
+    height: 670px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .special .wrap .content #container .box .panel {
+    width: 480px;
+    height: 670px;
+  }
+  .special .wrap .content .logo {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+  }
+  .special .wrap .content .logo img {
+    width: 100%;
+    height: 100%;
+  }
 }
-
-.prettyprint ol li {
-  background-color: black;
+@media screen and (max-width: 428px) {
+  .special {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #eef4f1;
+    overflow: hidden;
+  }
+  .special .wrap {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .special .wrap .content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .special .wrap .content .title {
+    width: 400px;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .special .wrap .content .title .text {
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+  }
+  .special .wrap .content .title .text p {
+    font: normal 50px/1 "Noto sans KR";
+    color: #333;
+  }
+  .special .wrap .content .title .text p strong {
+    font: 40px/1.3 "Noto sans KR";
+    color: #333;
+  }
+  .special .wrap .content .title .text::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 2px;
+    background-color: #333;
+    margin: 30px 0px 30px;
+  }
+  .special .wrap .content #container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+  }
+  .special .wrap .content #container .box {
+    position: fixed;
+    top: 700px;
+    left: -430px;
+    width: 480px;
+    height: 335px;
+    display: none;
+  }
+  .special .wrap .content #container .box .panel {
+    width: 192px;
+    height: 268px;
+  }
+  .special .wrap .content #container .box .panel > img {
+    width: 192px;
+    height: 268px;
+  }
+  .special .wrap .content .logo {
+    display: none;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+  }
+  .special .wrap .content .logo img {
+    width: 100%;
+    height: 100%;
+  }
 }
-
-.panel.red .prettyprint .linenums > li:nth-child(n+7):nth-child(-n+9),
-.panel.gray .prettyprint .linenums > li:nth-child(10),
-.panel.purple .prettyprint .linenums > li:nth-child(4),
-.panel.green .prettyprint .linenums > li:nth-child(n+6):nth-child(-n+10) {
-  background-color: #222;
+#video {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eef4f1;
+  position: relative;
 }
-
-.box {
-  width: 100px;
-  height: 80px;
+#video .title {
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  opacity: 0.1;
+}
+#video .title h3 {
+  font: bold 80px/1.3 "g마켓 산스 ttf";
+  color: #333;
+}
+#video .txt {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 60px;
+  left: 40px;
+}
+#video .txt p {
+  font: 40px/1 "g마켓 산스 ttf";
+  color: #333;
+  padding-bottom: 20px;
+}
+#video .inner {
+  width: 1080px;
+  height: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+}
+#video .inner .vidlist {
+  width: 1080px;
+  height: 360px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#video .inner .vidlist article {
+  width: 360px;
+  height: 180px;
+  border: 1px solid #555;
+}
+#video .inner .vidlist article .pic {
+  display: block;
+  width: 360px;
+  height: 180px;
+}
+#video .inner .vidlist article .pic > img {
+  width: 360px;
+  height: 180px;
+  object-fit: cover;
+}
+#video .inner .vidlist .pop {
+  width: 1280px;
+  height: 720px;
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#video .inner .vidlist .pop .btnClose {
+  position: absolute;
+  right: -55px;
+  font: 40px/55px "g마켓 산스 ttf";
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  border-radius: 50%;
+  color: #fff;
   text-align: center;
-  line-height: 80px;
-  background-color: white;
-  border-radius: 8px;
-  color: #222;
-  font-weight: 700;
-  margin-left: 20px;
-  will-change: transform;
+  cursor: pointer;
+}
+#video .apple {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
-.box.active {
-  background-color: orange;
-  border: 2px solid white;
+@media screen and (max-width: 700px) {
+  #video {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef4f1;
+    position: relative;
+  }
+  #video .title {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    opacity: 0.1;
+  }
+  #video .title h3 {
+    font: bold 50px/1.3 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #video .txt {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 60px;
+    left: 40px;
+  }
+  #video .txt p {
+    font: 40px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 20px;
+  }
+  #video .inner {
+    width: 540px;
+    height: 360px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+  }
+  #video .inner .vidlist {
+    width: 648px;
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #video .inner .vidlist article {
+    width: 180px;
+    height: 90px;
+    border: 1px solid #555;
+  }
+  #video .inner .vidlist article .pic {
+    display: block;
+    width: 180px;
+    height: 90px;
+  }
+  #video .inner .vidlist article .pic > img {
+    width: 180px;
+    height: 90px;
+    object-fit: cover;
+  }
+  #video .inner .vidlist .pop {
+    width: 640px;
+    height: 360px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #video .inner .vidlist .pop .btnClose {
+    position: absolute;
+    top: -60px;
+    right: 10px;
+    font: 40px/55px "g마켓 산스 ttf";
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+  }
+  #video .apple {
+    position: absolute;
+    bottom: 100px;
+    right: 0px;
+  }
+  #video .apple > img {
+    width: 300px;
+    height: 300px;
+  }
 }
-
-.description,
-.final {
+@media screen and (max-width: 428px) {
+  #video {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef4f1;
+    position: relative;
+  }
+  #video .title {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    opacity: 0.1;
+  }
+  #video .title h3 {
+    font: bold 50px/1.3 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #video .txt {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 60px;
+    left: 40px;
+  }
+  #video .txt p {
+    font: 40px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 20px;
+  }
+  #video .inner {
+    width: 360px;
+    height: 270px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+  }
+  #video .inner .vidlist {
+    width: 360px;
+    height: 270px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #video .inner .vidlist article {
+    width: 180px;
+    height: 90px;
+    border: 1px solid #555;
+  }
+  #video .inner .vidlist article .pic {
+    display: block;
+    width: 180px;
+    height: 90px;
+  }
+  #video .inner .vidlist article .pic > img {
+    width: 180px;
+    height: 90px;
+    object-fit: cover;
+  }
+  #video .inner .vidlist .pop {
+    width: 384px;
+    height: 216px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #video .inner .vidlist .pop .btnClose {
+    position: absolute;
+    top: -60px;
+    right: 10px;
+    font: 40px/55px "g마켓 산스 ttf";
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+  }
+  #video .apple {
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+  }
+  #video .apple > img {
+    width: 200px;
+    height: 200px;
+  }
+}
+#promise {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eef4f1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  min-height: 80vh;
 }
-
-.container {
-  width: 500%;
-  height: 100vh;
+#promise .wrap {
+  width: 1600px;
+  height: 700px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 100px;
+}
+#promise .wrap .title {
+  width: 100%;
+  height: 150px;
+}
+#promise .wrap .title h2 {
+  font: bold 40px/1 "g마켓 산스 ttf";
+  color: #333;
+  padding-bottom: 20px;
+}
+#promise .wrap .title h3 {
+  font: 30px/1 "g마켓 산스 ttf";
+  color: #333;
+}
+#promise .wrap .content {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+#promise .wrap .content .box {
+  width: 400px;
+  height: 400px;
+}
+#promise .wrap .content .box img {
+  width: 100px;
+  height: 100px;
+}
+#promise .wrap .content .box h4 {
+  font: bold 25px/1 "g마켓 산스 ttf";
+  color: #333;
+  padding-top: 50px;
+}
+#promise .wrap .content .box span {
+  font: 18px/1.3 "g마켓 산스 ttf";
+  color: #333;
+  padding-top: 20px;
+  display: block;
 }
 
-.panel {
-  font-weight: 300;
+.doctors {
+  width: 100%;
+  height: 100vh;
+  background-color: #eef4f1;
+}
+.doctors h1 {
+  width: 100%;
+  height: 10%;
+  padding-top: 30px;
+  text-align: center;
+  font: bold 40px/1 "g마켓 산스 ttf";
+  color: #333;
+}
+.doctors .wrap {
+  width: 100%;
+  height: 90%;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.doctors .wrap .card {
+  width: 450px;
+  margin: 10px;
+  display: inline-grid;
+  transition: transform 0.5s;
+  transform: perspective(1800px) rotateY(0deg);
+  transform-style: preserve-3d;
+}
+.doctors .wrap .card .card_front {
+  grid-area: 1/1/1/1;
+  width: 450px;
+  height: 300px;
+  backface-visibility: hidden;
+}
+.doctors .wrap .card .card_front > a > img {
+  width: 450px;
+  height: 300px;
+}
+.doctors .wrap .card .card_back {
+  grid-area: 1/1/1/1;
+  width: 450px;
+  height: 300px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.doctors .wrap .card .card_back > a > img {
+  width: 450px;
+  height: 300px;
+}
+.doctors .wrap .card:hover {
+  transform: perspective(1800px) rotateY(180deg);
 }
 
-#footer {
+@media screen and (max-width: 700px) {
+  #promise {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef4f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #promise .wrap {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  #promise .wrap .title {
+    width: 100%;
+    height: 100px;
+  }
+  #promise .wrap .title h2 {
+    font: bold 30px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 20px;
+  }
+  #promise .wrap .title h3 {
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #promise .wrap .content {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  #promise .wrap .content .box {
+    width: 400px;
+    height: 400px;
+  }
+  #promise .wrap .content .box img {
+    width: 100px;
+    height: 100px;
+  }
+  #promise .wrap .content .box h4 {
+    font: bold 20px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-top: 50px;
+  }
+  #promise .wrap .content .box span {
+    font: 15px/1.3 "g마켓 산스 ttf";
+    color: #333;
+    padding-top: 20px;
+    display: block;
+  }
+  .doctors {
+    width: 100%;
+    height: 100vh;
+    background-color: #eef4f1;
+  }
+  .doctors h1 {
+    width: 100%;
+    height: 10%;
+    padding-top: 30px;
+    text-align: center;
+    font: bold 40px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  .doctors .wrap {
+    width: 100%;
+    height: 90%;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .doctors .wrap .card {
+    width: 225px;
+    margin: 10px;
+    display: inline-grid;
+    transition: transform 0.5s;
+    transform: perspective(1800px) rotateY(0deg);
+    transform-style: preserve-3d;
+  }
+  .doctors .wrap .card .card_front {
+    grid-area: 1/1/1/1;
+    width: 225px;
+    height: 150px;
+    backface-visibility: hidden;
+  }
+  .doctors .wrap .card .card_front > a > img {
+    width: 225px;
+    height: 150px;
+  }
+  .doctors .wrap .card .card_back {
+    grid-area: 1/1/1/1;
+    width: 225px;
+    height: 150px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }
+  .doctors .wrap .card .card_back > a > img {
+    width: 225px;
+    height: 150px;
+  }
+  .doctors .wrap .card:hover {
+    transform: perspective(1800px) rotateY(180deg);
+  }
+}
+@media screen and (max-width: 428px) {
+  #promise {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef4f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #promise .wrap {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  #promise .wrap .title {
+    width: 100%;
+    height: 100px;
+  }
+  #promise .wrap .title h2 {
+    font: bold 25px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 20px;
+  }
+  #promise .wrap .title h3 {
+    font: 15px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #promise .wrap .content {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  #promise .wrap .content .box {
+    width: 400px;
+    height: 400px;
+  }
+  #promise .wrap .content .box img {
+    width: 70px;
+    height: 70px;
+  }
+  #promise .wrap .content .box h4 {
+    font: bold 14px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-top: 50px;
+  }
+  #promise .wrap .content .box span {
+    font: 12px/1.3 "g마켓 산스 ttf";
+    color: #333;
+    padding-top: 20px;
+    display: block;
+  }
+  .doctors {
+    width: 100%;
+    height: 100vh;
+    background-color: #eef4f1;
+  }
+  .doctors h1 {
+    width: 100%;
+    height: 10%;
+    padding-top: 30px;
+    text-align: center;
+    font: bold 40px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  .doctors .wrap {
+    width: 100%;
+    height: 90%;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .doctors .wrap .card {
+    width: 135px;
+    margin: 10px;
+    display: inline-grid;
+    transition: transform 0.5s;
+    transform: perspective(1800px) rotateY(0deg);
+    transform-style: preserve-3d;
+  }
+  .doctors .wrap .card .card_front {
+    grid-area: 1/1/1/1;
+    width: 135px;
+    height: 90px;
+    backface-visibility: hidden;
+  }
+  .doctors .wrap .card .card_front > a > img {
+    width: 135px;
+    height: 90px;
+  }
+  .doctors .wrap .card .card_back {
+    grid-area: 1/1/1/1;
+    width: 135px;
+    height: 90px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+  }
+  .doctors .wrap .card .card_back > a > img {
+    width: 135px;
+    height: 90px;
+  }
+  .doctors .wrap .card:hover {
+    transform: perspective(1800px) rotateY(180deg);
+  }
+}
+#treatment_system .implant {
+  width: 100%;
+  height: 100%;
+  background-color: #eef4f1;
+}
+#treatment_system .implant .wrap {
+  width: 100%;
+  height: 920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#treatment_system .implant .wrap .top {
+  width: 1200px;
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+#treatment_system .implant .wrap .top .top_left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+#treatment_system .implant .wrap .top .top_left h3 {
+  width: 150px;
+  height: 50px;
+  background-color: #def1df;
+  border: 2px solid #14abe8;
+  border-radius: 30px;
+  font: 25px/50px "g마켓 산스 ttf";
+  color: #14abe8;
+  text-align: center;
+}
+#treatment_system .implant .wrap .top .top_left h4 {
+  font: 25px/1 "g마켓 산스 ttf";
+  color: #333;
+}
+#treatment_system .implant .wrap .top .top_left span {
+  font: 18px/1 "g마켓 산스 ttf";
+  color: #333;
+}
+#treatment_system .implant .wrap .top .top_left .graph {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#treatment_system .implant .wrap .top .top_left .graph img {
+  width: 344.8px;
+  height: 187.6px;
+}
+#treatment_system .implant .wrap .top .top_left .graph span :nth-of-type(1) {
+  font: 25px/1.5 "g마켓 산스 ttf";
+  color: #333;
+}
+#treatment_system .implant .wrap .top .top_left .graph span :nth-of-type(2) {
+  font: 15px/1 "g마켓 산스 ttf";
+  color: #333;
+  text-align: right;
+}
+#treatment_system .implant .wrap .top .top_right {
+  width: 70%;
+  height: 100%;
+  position: relative;
+}
+#treatment_system .implant .wrap .top .top_right h5 {
+  font: bold 50px/1 "g마켓 산스 ttf";
+  color: lightsteelblue;
+  opacity: 0.4;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+#treatment_system .implant .wrap .top .top_right .imgs .img1 {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 365.4px;
+  height: 174.3px;
+}
+#treatment_system .implant .wrap .top .top_right .imgs .img2 {
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  width: 418.6px;
+  height: 316.4px;
+}
+#treatment_system .implant .wrap #bottom {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+#treatment_system .implant .wrap #bottom .slidebox {
+  width: 100%;
+  height: 100%;
+}
+#treatment_system .implant .wrap #bottom .slidebox .box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#treatment_system .implant .wrap #bottom .slidebox .box > a {
+  width: 100%;
+  height: 100%;
+}
+#treatment_system .implant .wrap #bottom .slidebox .box > a > img {
+  width: 100%;
+  height: 100%;
+}
+#treatment_system .orthodontic {
   width: 100vw;
   height: 100vh;
-  background-color: #eee;
+  background-color: #eef4f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#treatment_system .orthodontic .wrap {
+  width: 1200px;
+  height: 720px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#footer .left {
+#treatment_system .orthodontic .wrap .left {
   width: 50%;
   height: 100%;
-  padding: 80px 95px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-#footer .left .telephone {
+#treatment_system .orthodontic .wrap .left .left_top {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 35px;
-}
-#footer .left .telephone h3 {
-  flex: 1;
-  text-align: left;
-  display: flex;
-  gap: 20px;
-}
-#footer .left .telephone h3 i {
-  font-size: 35px;
-}
-#footer .left .telephone h3 span {
-  font: normal 35px/35px "G마켓 산스 ttf";
-  color: #000;
-}
-#footer .left .telephone h4 {
-  flex: 1;
-  font: normal 35px/35px "G마켓 산스 ttf";
-  color: #000;
-  text-align: left;
-}
-#footer .left .talk {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 35px;
-}
-#footer .left .talk h3 {
-  flex: 1;
-  text-align: left;
-  display: flex;
-  gap: 20px;
-}
-#footer .left .talk h3 i {
-  font-size: 35px;
-}
-#footer .left .talk h3 span {
-  font: normal 35px/35px "G마켓 산스 ttf";
-  color: #000;
-}
-#footer .left .talk h4 {
-  flex: 1;
-  font: normal 24px/1 "G마켓 산스 ttf";
-  color: #000;
-  text-align: left;
-}
-#footer .left .time {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 35px;
-}
-#footer .left .time h3 {
-  flex: 1;
-  text-align: left;
-  display: flex;
-  gap: 20px;
-}
-#footer .left .time h3 i {
-  font-size: 35px;
-}
-#footer .left .time h3 span {
-  font: normal 35px/35px "G마켓 산스 ttf";
-  color: #000;
-}
-#footer .left .time .date_wrap {
-  flex: 1;
+  height: 300px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  justify-content: space-evenly;
 }
-#footer .left .time .date_wrap > div {
-  flex: 1;
-  font: normal 22px/1 "G마켓 산스 ttf";
+#treatment_system .orthodontic .wrap .left .left_top h3 {
+  width: 150px;
+  height: 50px;
+  background-color: #def1df;
+  border: 2px solid #14abe8;
+  border-radius: 30px;
+  font: 25px/50px "g마켓 산스 ttf";
+  color: #14abe8;
+  text-align: center;
 }
-#footer .left .time .date_wrap > div:nth-of-type(1) strong {
-  letter-spacing: 23.5px;
+#treatment_system .orthodontic .wrap .left .left_top h4 {
+  font: 25px/1 "g마켓 산스 ttf";
+  color: #333;
 }
-#footer .left .time .date_wrap > div:nth-of-type(3) strong {
-  letter-spacing: 8.5px;
-}
-#footer .left .time .date_wrap > div:nth-of-type(4) strong {
-  letter-spacing: 1.5px;
-}
-#footer .left .time .date_wrap > div:nth-of-type(5) strong {
-  letter-spacing: 1px;
-}
-#footer .left .address {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 25px;
-}
-#footer .left .address h3 {
-  width: 20%;
-  font: normal 25px/1 "G마켓 산스 ttf";
-  color: #000;
-  text-align: left;
-}
-#footer .left .address h4 {
+#treatment_system .orthodontic .wrap .left .left_top span {
   width: 80%;
-  font: normal 25px/1 "G마켓 산스 ttf";
-  color: #000;
-  text-align: right;
+  font: 18px/1 "g마켓 산스 ttf";
+  color: #333;
 }
-#footer .left .copy {
-  width: 100%;
-}
-#footer .left .copy span {
-  font: normal 20px/1 "g마켓 산스 ttf";
-}
-#footer .right {
-  width: 50%;
-  height: 100%;
-  padding: 10px 95px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-#footer .right #map {
+#treatment_system .orthodontic .wrap .left .left_bottom {
   width: 100%;
   height: 400px;
-  border: 1px solid #000;
+  position: relative;
 }
-#footer .right .reservation {
-  width: 75%;
+#treatment_system .orthodontic .wrap .left .left_bottom > img {
+  position: absolute;
+}
+#treatment_system .orthodontic .wrap .left .left_bottom .slidebar {
+  width: 480px;
+  height: 5px;
   margin: 0 auto;
+  border-radius: 5px;
+  outline: none;
+  position: absolute;
+  bottom: 100px;
 }
-#footer .right .reservation h4 {
+#treatment_system .orthodontic .wrap .left .left_bottom .slidebar .slider {
   width: 100%;
-  text-align: center;
-  font: bold 30px/1 "g마켓 산스 ttf";
-  color: #000;
-  margin-bottom: 10px;
+  height: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(90deg, #79c344, #16abe6);
 }
-#footer .right .reservation fieldset {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-top: 3px solid #333;
-  border-bottom: 3px solid #333;
+#treatment_system .orthodontic .wrap .left .left_bottom .slidebar ::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 50px;
+  width: 50px;
+  background-image: url(/img/치료서비스/img/사과로고---배경X---수정2.png);
+  background-position: center center;
+  border-radius: 10%;
+  cursor: pointer;
 }
-#footer .right .reservation fieldset > .table_1 {
-  width: 100%;
-}
-#footer .right .reservation fieldset > .table_1 tr {
-  width: 100%;
-}
-#footer .right .reservation fieldset > .table_1 tr th {
-  width: 30%;
-  padding: 3px 0px;
-  font: normal 20px/1.3 "G마켓 산스 ttf";
-}
-#footer .right .reservation fieldset > .table_1 tr td {
-  width: 70%;
-  padding: 5px 0px;
-}
-#footer .right .reservation fieldset > .table_1 tr td input[type=text] {
-  width: 100%;
-  padding: 3px 0px;
-  font: normal 15px/1 "g마켓 산스 ttf";
+#treatment_system .orthodontic .wrap .left .left_bottom .before {
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 20px/1 "g마켓 산스 ttf";
   color: #333;
-  background-color: #fff;
-  text-align: center;
+  position: absolute;
+  bottom: 0;
 }
-#footer .right .reservation fieldset .agreement {
-  width: 100%;
-  margin-top: 10px;
+#treatment_system .orthodontic .wrap .right {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+#treatment_system .orthodontic .wrap .right h5 {
+  font: bold 50px/1 "g마켓 산스 ttf";
+  color: lightsteelblue;
+  opacity: 0.4;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+#treatment_system .orthodontic .wrap .right .imgs .img1 {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+  width: 370px;
+  height: 263px;
+}
+#treatment_system .orthodontic .wrap .right .imgs .img2 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 370px;
+  height: 370px;
+}
+#treatment_system .prevent {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eef4f1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-#footer .right .reservation fieldset .agreement #terms {
-  width: 100%;
-  height: 100px;
-  resize: none;
-  color: #000;
-  background-color: #fff;
-  font: normal 15px/1 "g마켓 산스 ttf";
-  text-align: left;
-}
-#footer .right .reservation fieldset .agreement .agree_text {
-  display: flex;
-  gap: 10px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
 }
-#footer .right .reservation fieldset .agreement .agree_text > label {
-  font: normal 15px/1 "g마켓 산스 ttf";
-}
-#footer .right .reservation fieldset .table_2 {
-  width: 100%;
-  line-height: 40px;
-}
-#footer .right .reservation fieldset .table_2 > tbody {
-  width: 100%;
-  margin: 0 auto;
-}
-#footer .right .reservation fieldset .table_2 > tbody > tr {
-  width: 100%;
-}
-#footer .right .reservation fieldset .table_2 > tbody > tr > th {
-  width: 100%;
+#treatment_system .prevent .wrap {
+  width: 1200px;
+  height: 720px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-#footer .right .reservation fieldset .table_2 > tbody > tr > th input[type=submit] {
-  width: 100px;
-  height: 40px;
-  border: 2px solid #333;
-  border-radius: 5px;
-  background-color: #fff;
-  font: bold 17px/1 "g마켓 산스 ttf";
+#treatment_system .prevent .wrap .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#treatment_system .prevent .wrap .left h3 {
+  width: 150px;
+  height: 50px;
+  background-color: #def1df;
+  border: 2px solid #14abe8;
+  border-radius: 30px;
+  font: 25px/50px "g마켓 산스 ttf";
+  color: #14abe8;
+  text-align: center;
+}
+#treatment_system .prevent .wrap .left h4 {
+  font: 25px/1 "g마켓 산스 ttf";
+  color: #333;
+}
+#treatment_system .prevent .wrap .left span {
+  width: 90%;
+  font: 18px/1 "g마켓 산스 ttf";
+  color: #333;
+}
+#treatment_system .prevent .wrap .right {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+#treatment_system .prevent .wrap .right h5 {
+  font: bold 50px/1 "g마켓 산스 ttf";
+  color: lightsteelblue;
+  opacity: 0.4;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+#treatment_system .prevent .wrap .right h6 {
+  position: absolute;
+  top: 70px;
+  right: 220px;
+  font: bold 30px/1 "g마켓 산스 ttf";
   color: #333;
   text-align: center;
-  cursor: pointer;
+}
+#treatment_system .prevent .wrap .right img {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  top: 100px;
+}
+#treatment_system .prevent .line_wrap {
+  width: 100vw;
+  height: 70px;
+  background-color: #eef4f1;
+  position: absolute;
+  bottom: 0;
+}
+#treatment_system .prevent .line_wrap .line {
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #79c344, #16abe6);
+  animation: view 8s linear 0.8s 1 normal both;
+  animation-iteration-count: infinite;
+}
+#treatment_system .prevent .line_wrap .line h1 {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  font: 20px/1 "g마켓 산스 ttf";
+}
+#treatment_system .prevent .line_wrap .line .bg1 {
+  width: 203px;
+  height: 30px;
+  background-color: #eef4f1;
+  position: absolute;
+  left: 355px;
+}
+#treatment_system .prevent .line_wrap .line .bg2 {
+  width: 120px;
+  height: 30px;
+  background-color: #eef4f1;
+  position: absolute;
+  left: 900px;
+}
+#treatment_system .prevent .line_wrap .line .bg3 {
+  width: 126px;
+  height: 30px;
+  background-color: #eef4f1;
+  position: absolute;
+  left: 1377px;
+}
+#treatment_system .prevent .line_wrap .text_box1 {
+  display: inline-block;
+}
+#treatment_system .prevent .line_wrap .text_box1 > p:nth-of-type(1) {
+  font: 30px/1 "g마켓 산스 ttf";
+  color: #333;
+  position: absolute;
+  top: -10px;
+  left: 355px;
+  width: 205px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: opacityview 8s linear 2.3s 1 normal both;
+  animation-iteration-count: infinite;
+}
+#treatment_system .prevent .line_wrap .text_box1 > p:nth-of-type(2) {
+  font: 20px/1 "g마켓 산스 ttf";
+  color: #333;
+  position: absolute;
+  left: 355px;
+}
+#treatment_system .prevent .line_wrap .text_box2 {
+  display: inline-block;
+}
+#treatment_system .prevent .line_wrap .text_box2 > p:nth-of-type(1) {
+  font: 30px/1 "g마켓 산스 ttf";
+  color: #333;
+  position: absolute;
+  top: -10px;
+  left: 900px;
+  width: 120px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: opacityview 8s linear 4.6s 1 normal both;
+  animation-iteration-count: infinite;
+}
+#treatment_system .prevent .line_wrap .text_box2 > p:nth-of-type(2) {
+  font: 20px/1 "g마켓 산스 ttf";
+  color: #333;
+  position: absolute;
+  left: 900px;
+}
+#treatment_system .prevent .line_wrap .text_box3 {
+  display: inline-block;
+}
+#treatment_system .prevent .line_wrap .text_box3 > p:nth-of-type(1) {
+  font: 30px/1 "g마켓 산스 ttf";
+  color: #333;
+  position: absolute;
+  top: -10px;
+  left: 1377px;
+  width: 126px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: opacityview 8s linear 6.5s 1 normal both;
+  animation-iteration-count: infinite;
+}
+#treatment_system .prevent .line_wrap .text_box3 > p:nth-of-type(2) {
+  font: 20px/1 "g마켓 산스 ttf";
+  color: #333;
+  position: absolute;
+  left: 1377px;
+}
+#treatment_system .stomatology {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eef4f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#treatment_system .stomatology .wrap {
+  width: 1200px;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#treatment_system .stomatology .wrap .top {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#treatment_system .stomatology .wrap .top h3 {
+  width: 150px;
+  height: 50px;
+  background-color: #def1df;
+  border: 2px solid #14abe8;
+  border-radius: 30px;
+  font: 25px/50px "g마켓 산스 ttf";
+  color: #14abe8;
+  text-align: center;
+}
+#treatment_system .stomatology .wrap .top h4 {
+  font: 25px/1 "g마켓 산스 ttf";
+  color: #333;
+}
+#treatment_system .stomatology .wrap .top span {
+  font: 18px/1 "g마켓 산스 ttf";
+  color: #333;
+}
+#treatment_system .stomatology .wrap .top h5 {
+  font: bold 50px/1 "g마켓 산스 ttf";
+  color: lightsteelblue;
+  opacity: 0.4;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+#treatment_system .stomatology .wrap .bottom {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#treatment_system .stomatology .wrap .bottom .bottom_top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#treatment_system .stomatology .wrap .bottom .bottom_top .box {
+  position: relative;
+}
+#treatment_system .stomatology .wrap .bottom .bottom_top .box :hover {
+  opacity: 0;
+}
+#treatment_system .stomatology .wrap .bottom .bottom_top .box .hover {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 30;
+  font: bold 20px/240px "g마켓 산스 ttf";
+  color: #fff;
+}
+#treatment_system .stomatology .wrap .bottom .bottom_bottom {
+  width: 720px;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 240px;
+}
+#treatment_system .stomatology .wrap .bottom .bottom_bottom .box {
+  position: relative;
+}
+#treatment_system .stomatology .wrap .bottom .bottom_bottom .box :hover {
+  opacity: 0;
+}
+#treatment_system .stomatology .wrap .bottom .bottom_bottom .box .hover {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 30;
+  font: bold 20px/240px "g마켓 산스 ttf";
+  color: #fff;
+}
+
+@keyframes view {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes opacityview {
+  0% {
+    width: 0%;
+    opacity: 0.8;
+  }
+  50% {
+    width: 50%;
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  #treatment_system {
+    width: 100vw;
+  }
+  #treatment_system .implant {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: #eef4f1;
+  }
+  #treatment_system .implant .wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #treatment_system .implant .wrap .top {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  #treatment_system .implant .wrap .top .top_left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 100px;
+  }
+  #treatment_system .implant .wrap .top .top_left h3 {
+    width: 100px;
+    height: 35px;
+    background-color: #def1df;
+    border: 2px solid #14abe8;
+    border-radius: 30px;
+    font: 18px/35px "g마켓 산스 ttf";
+    color: #14abe8;
+    text-align: center;
+  }
+  #treatment_system .implant .wrap .top .top_left h4 {
+    font: 25px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .implant .wrap .top .top_left span {
+    font: 15px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .implant .wrap .top .top_left .graph {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #treatment_system .implant .wrap .top .top_left .graph img {
+    width: 344.8px;
+    height: 187.6px;
+  }
+  #treatment_system .implant .wrap .top .top_left .graph span :nth-of-type(1) {
+    font: 15px/1.5 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .implant .wrap .top .top_left .graph span :nth-of-type(2) {
+    font: 13px/1 "g마켓 산스 ttf";
+    color: #333;
+    text-align: right;
+  }
+  #treatment_system .implant .wrap .top .top_right {
+    width: 60%;
+    height: 100%;
+    position: relative;
+  }
+  #treatment_system .implant .wrap .top .top_right h5 {
+    font: bold 40px/1 "g마켓 산스 ttf";
+    color: lightsteelblue;
+    opacity: 0.4;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+  }
+  #treatment_system .implant .wrap .top .top_right .imgs .img1 {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    width: 365.4px;
+    height: 174.3px;
+  }
+  #treatment_system .implant .wrap .top .top_right .imgs .img2 {
+    position: absolute;
+    top: 300px;
+    right: -10px;
+    width: 293.02px;
+    height: 221.48px;
+  }
+  #treatment_system .implant .wrap #bottom {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+  }
+  #treatment_system .implant .wrap #bottom .slidebox {
+    width: 100%;
+    height: 100%;
+  }
+  #treatment_system .implant .wrap #bottom .slidebox .box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  #treatment_system .implant .wrap #bottom .slidebox .box > a {
+    width: 100%;
+    height: 100%;
+  }
+  #treatment_system .implant .wrap #bottom .slidebox .box > a > img {
+    width: 100%;
+    height: 100%;
+  }
+  #treatment_system .orthodontic {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef4f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #treatment_system .orthodontic .wrap {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #treatment_system .orthodontic .wrap .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #treatment_system .orthodontic .wrap .left .left_top {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #treatment_system .orthodontic .wrap .left .left_top h3 {
+    width: 100px;
+    height: 35px;
+    background-color: #def1df;
+    border: 2px solid #14abe8;
+    border-radius: 30px;
+    font: 18px/35px "g마켓 산스 ttf";
+    color: #14abe8;
+    text-align: center;
+  }
+  #treatment_system .orthodontic .wrap .left .left_top h4 {
+    font: 25px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .orthodontic .wrap .left .left_top span {
+    width: 100%;
+    font: 15px/1.3 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .orthodontic .wrap .left .left_bottom {
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  #treatment_system .orthodontic .wrap .left .left_bottom > img {
+    position: absolute;
+    width: 384px;
+    height: 216px;
+  }
+  #treatment_system .orthodontic .wrap .left .left_bottom .slidebar {
+    width: 384px;
+    height: 5px;
+    margin: 0 auto;
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    bottom: 100px;
+  }
+  #treatment_system .orthodontic .wrap .left .left_bottom .slidebar .slider {
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(90deg, #79c344, #16abe6);
+  }
+  #treatment_system .orthodontic .wrap .left .left_bottom .slidebar ::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 50px;
+    width: 50px;
+    background-image: url(/img/치료서비스/img/사과로고---배경X---수정2.png);
+    background-position: center center;
+    border-radius: 10%;
+    cursor: pointer;
+  }
+  #treatment_system .orthodontic .wrap .left .left_bottom .before {
+    width: 384px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #333;
+    position: absolute;
+    bottom: 0;
+  }
+  #treatment_system .orthodontic .wrap .right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+  }
+  #treatment_system .orthodontic .wrap .right h5 {
+    font: bold 30px/1 "g마켓 산스 ttf";
+    color: lightsteelblue;
+    opacity: 0.4;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+  }
+  #treatment_system .orthodontic .wrap .right .imgs .img1 {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    width: 296px;
+    height: 210.4px;
+  }
+  #treatment_system .orthodontic .wrap .right .imgs .img2 {
+    position: absolute;
+    bottom: 200px;
+    right: 20px;
+    width: 185px;
+    height: 185px;
+  }
+  #treatment_system .prevent {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef4f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  #treatment_system .prevent .wrap {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #treatment_system .prevent .wrap .left {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #treatment_system .prevent .wrap .left h3 {
+    width: 110px;
+    height: 35px;
+    background-color: #def1df;
+    border: 2px solid #14abe8;
+    border-radius: 30px;
+    font: 18px/35px "g마켓 산스 ttf";
+    color: #14abe8;
+    text-align: center;
+  }
+  #treatment_system .prevent .wrap .left h4 {
+    font: 25px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .prevent .wrap .left span {
+    width: 90%;
+    font: 15px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .prevent .wrap .right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+  }
+  #treatment_system .prevent .wrap .right h5 {
+    font: bold 25px/1 "g마켓 산스 ttf";
+    color: lightsteelblue;
+    opacity: 0.4;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+  }
+  #treatment_system .prevent .wrap .right h6 {
+    position: absolute;
+    top: 150px;
+    right: 135px;
+    font: bold 20px/1 "g마켓 산스 ttf";
+    color: #333;
+    text-align: center;
+  }
+  #treatment_system .prevent .wrap .right img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 200px;
+    right: 0px;
+  }
+  #treatment_system .prevent .line_wrap {
+    width: 100vw;
+    height: 70px;
+    background-color: #eef4f1;
+    position: absolute;
+    bottom: 0;
+    display: none;
+  }
+  #treatment_system .prevent .line_wrap .line {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #79c344, #16abe6);
+    animation: view 8s linear 0.8s 1 normal both;
+    animation-iteration-count: infinite;
+  }
+  #treatment_system .prevent .line_wrap .line h1 {
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    font: 20px/1 "g마켓 산스 ttf";
+  }
+  #treatment_system .prevent .line_wrap .line .bg1 {
+    width: 203px;
+    height: 30px;
+    background-color: #eef4f1;
+    position: absolute;
+    left: 355px;
+  }
+  #treatment_system .prevent .line_wrap .line .bg2 {
+    width: 120px;
+    height: 30px;
+    background-color: #eef4f1;
+    position: absolute;
+    left: 900px;
+  }
+  #treatment_system .prevent .line_wrap .line .bg3 {
+    width: 126px;
+    height: 30px;
+    background-color: #eef4f1;
+    position: absolute;
+    left: 1377px;
+  }
+  #treatment_system .prevent .line_wrap .text_box1 {
+    display: inline-block;
+  }
+  #treatment_system .prevent .line_wrap .text_box1 > p:nth-of-type(1) {
+    font: 30px/1 "g마켓 산스 ttf";
+    color: #333;
+    position: absolute;
+    top: -10px;
+    left: 355px;
+    width: 205px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: opacityview 8s linear 2.3s 1 normal both;
+    animation-iteration-count: infinite;
+  }
+  #treatment_system .prevent .line_wrap .text_box1 > p:nth-of-type(2) {
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #333;
+    position: absolute;
+    left: 355px;
+  }
+  #treatment_system .prevent .line_wrap .text_box2 {
+    display: inline-block;
+  }
+  #treatment_system .prevent .line_wrap .text_box2 > p:nth-of-type(1) {
+    font: 30px/1 "g마켓 산스 ttf";
+    color: #333;
+    position: absolute;
+    top: -10px;
+    left: 900px;
+    width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: opacityview 8s linear 4.6s 1 normal both;
+    animation-iteration-count: infinite;
+  }
+  #treatment_system .prevent .line_wrap .text_box2 > p:nth-of-type(2) {
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #333;
+    position: absolute;
+    left: 900px;
+  }
+  #treatment_system .prevent .line_wrap .text_box3 {
+    display: inline-block;
+  }
+  #treatment_system .prevent .line_wrap .text_box3 > p:nth-of-type(1) {
+    font: 30px/1 "g마켓 산스 ttf";
+    color: #333;
+    position: absolute;
+    top: -10px;
+    left: 1377px;
+    width: 126px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: opacityview 8s linear 6.5s 1 normal both;
+    animation-iteration-count: infinite;
+  }
+  #treatment_system .prevent .line_wrap .text_box3 > p:nth-of-type(2) {
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #333;
+    position: absolute;
+    left: 1377px;
+  }
+  #treatment_system .stomatology {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef4f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #treatment_system .stomatology .wrap {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  #treatment_system .stomatology .wrap .top {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #treatment_system .stomatology .wrap .top h3 {
+    width: 100px;
+    height: 35px;
+    background-color: #def1df;
+    border: 2px solid #14abe8;
+    border-radius: 30px;
+    font: 18px/35px "g마켓 산스 ttf";
+    color: #14abe8;
+    text-align: center;
+  }
+  #treatment_system .stomatology .wrap .top h4 {
+    font: 25px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .stomatology .wrap .top span {
+    font: 15px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .stomatology .wrap .top h5 {
+    font: bold 30px/1 "g마켓 산스 ttf";
+    color: lightsteelblue;
+    opacity: 0.4;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+  }
+  #treatment_system .stomatology .wrap .bottom {
+    width: 600px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_top {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_top .box {
+    position: relative;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_top .box > img {
+    width: 120px;
+    height: 120px;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_top .box :hover {
+    opacity: 0;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_top .box .hover {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 30;
+    font: 13px/120px "g마켓 산스 ttf";
+    color: #fff;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_bottom {
+    width: 360px;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 120px;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_bottom .box {
+    position: relative;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_bottom .box > img {
+    width: 120px;
+    height: 120px;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_bottom .box :hover {
+    opacity: 0;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_bottom .box .hover {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 30;
+    font: 13px/120px "g마켓 산스 ttf";
+    color: #fff;
+  }
+}
+@media screen and (max-width: 428px) {
+  #treatment_system {
+    width: 100vw;
+  }
+  #treatment_system .implant {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: #eef4f1;
+  }
+  #treatment_system .implant .wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #treatment_system .implant .wrap .top {
+    width: 90%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  #treatment_system .implant .wrap .top .top_left {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 100px;
+  }
+  #treatment_system .implant .wrap .top .top_left h3 {
+    width: 100px;
+    height: 35px;
+    background-color: #def1df;
+    border: 2px solid #14abe8;
+    border-radius: 30px;
+    font: 18px/35px "g마켓 산스 ttf";
+    color: #14abe8;
+    text-align: center;
+  }
+  #treatment_system .implant .wrap .top .top_left h4 {
+    font: 25px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .implant .wrap .top .top_left span {
+    font: 15px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .implant .wrap .top .top_left .graph {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #treatment_system .implant .wrap .top .top_left .graph img {
+    width: 344.8px;
+    height: 187.6px;
+  }
+  #treatment_system .implant .wrap .top .top_left .graph span :nth-of-type(1) {
+    font: 13px/1.5 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .implant .wrap .top .top_left .graph span :nth-of-type(2) {
+    font: 10px/1 "g마켓 산스 ttf";
+    color: #333;
+    text-align: right;
+  }
+  #treatment_system .implant .wrap .top .top_right {
+    width: 40%;
+    height: 100%;
+    position: relative;
+  }
+  #treatment_system .implant .wrap .top .top_right h5 {
+    font: bold 40px/1 "g마켓 산스 ttf";
+    color: lightsteelblue;
+    opacity: 0.4;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+  }
+  #treatment_system .implant .wrap .top .top_right .imgs .img1 {
+    position: absolute;
+    top: 100px;
+    left: auto;
+    right: 0;
+    width: 182.7px;
+    height: 87.15px;
+  }
+  #treatment_system .implant .wrap .top .top_right .imgs .img2 {
+    position: absolute;
+    top: 300px;
+    right: -10px;
+    width: 293.02px;
+    height: 221.48px;
+    display: none;
+  }
+  #treatment_system .implant .wrap #bottom {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  #treatment_system .implant .wrap #bottom .slidebox {
+    width: 100%;
+    height: 100%;
+  }
+  #treatment_system .implant .wrap #bottom .slidebox .box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  #treatment_system .implant .wrap #bottom .slidebox .box > a {
+    width: 100%;
+    height: 100%;
+  }
+  #treatment_system .implant .wrap #bottom .slidebox .box > a > img {
+    width: 100%;
+    height: 100%;
+  }
+  #treatment_system .orthodontic {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef4f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #treatment_system .orthodontic .wrap {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #treatment_system .orthodontic .wrap .left {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #treatment_system .orthodontic .wrap .left .left_top {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #treatment_system .orthodontic .wrap .left .left_top h3 {
+    width: 100px;
+    height: 35px;
+    background-color: #def1df;
+    border: 2px solid #14abe8;
+    border-radius: 30px;
+    font: 18px/35px "g마켓 산스 ttf";
+    color: #14abe8;
+    text-align: center;
+  }
+  #treatment_system .orthodontic .wrap .left .left_top h4 {
+    font: 25px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .orthodontic .wrap .left .left_top span {
+    width: 100%;
+    font: 15px/1.3 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .orthodontic .wrap .left .left_bottom {
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  #treatment_system .orthodontic .wrap .left .left_bottom > img {
+    position: absolute;
+    width: 384px;
+    height: 216px;
+  }
+  #treatment_system .orthodontic .wrap .left .left_bottom .slidebar {
+    width: 384px;
+    height: 5px;
+    margin: 0 auto;
+    border-radius: 5px;
+    outline: none;
+    position: absolute;
+    bottom: 100px;
+  }
+  #treatment_system .orthodontic .wrap .left .left_bottom .slidebar .slider {
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(90deg, #79c344, #16abe6);
+  }
+  #treatment_system .orthodontic .wrap .left .left_bottom .slidebar ::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 50px;
+    width: 50px;
+    background-image: url(/img/치료서비스/img/사과로고---배경X---수정2.png);
+    background-position: center center;
+    border-radius: 10%;
+    cursor: pointer;
+  }
+  #treatment_system .orthodontic .wrap .left .left_bottom .before {
+    width: 384px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #333;
+    position: absolute;
+    bottom: 0;
+  }
+  #treatment_system .orthodontic .wrap .right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+  }
+  #treatment_system .orthodontic .wrap .right h5 {
+    font: bold 30px/1 "g마켓 산스 ttf";
+    color: lightsteelblue;
+    opacity: 0.4;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+  }
+  #treatment_system .orthodontic .wrap .right .imgs .img1 {
+    position: absolute;
+    top: 120px;
+    left: auto;
+    right: 0;
+    width: 177.6px;
+    height: 126.24px;
+  }
+  #treatment_system .orthodontic .wrap .right .imgs .img2 {
+    position: absolute;
+    bottom: 200px;
+    right: 20px;
+    width: 185px;
+    height: 185px;
+    display: none;
+  }
+  #treatment_system .prevent {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef4f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  #treatment_system .prevent .wrap {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #treatment_system .prevent .wrap .left {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #treatment_system .prevent .wrap .left h3 {
+    width: 110px;
+    height: 35px;
+    background-color: #def1df;
+    border: 2px solid #14abe8;
+    border-radius: 30px;
+    font: 18px/35px "g마켓 산스 ttf";
+    color: #14abe8;
+    text-align: center;
+  }
+  #treatment_system .prevent .wrap .left h4 {
+    font: 25px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .prevent .wrap .left span {
+    width: 90%;
+    font: 15px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .prevent .wrap .left img {
+    display: none;
+  }
+  #treatment_system .prevent .wrap .right {
+    width: 100%;
+    height: 65%;
+    position: relative;
+  }
+  #treatment_system .prevent .wrap .right h5 {
+    font: bold 25px/1 "g마켓 산스 ttf";
+    color: lightsteelblue;
+    opacity: 0.4;
+    position: absolute;
+    top: -250px;
+    right: 0px;
+  }
+  #treatment_system .prevent .wrap .right h6 {
+    position: absolute;
+    top: 150px;
+    right: 135px;
+    font: bold 20px/1 "g마켓 산스 ttf";
+    color: #333;
+    text-align: center;
+  }
+  #treatment_system .prevent .wrap .right img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: auto;
+  }
+  #treatment_system .prevent .line_wrap {
+    width: 100vw;
+    height: 70px;
+    background-color: #eef4f1;
+    position: absolute;
+    bottom: 0;
+    display: none;
+  }
+  #treatment_system .prevent .line_wrap .line {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #79c344, #16abe6);
+    animation: view 8s linear 0.8s 1 normal both;
+    animation-iteration-count: infinite;
+  }
+  #treatment_system .prevent .line_wrap .line h1 {
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    font: 20px/1 "g마켓 산스 ttf";
+  }
+  #treatment_system .prevent .line_wrap .line .bg1 {
+    width: 203px;
+    height: 30px;
+    background-color: #eef4f1;
+    position: absolute;
+    left: 355px;
+  }
+  #treatment_system .prevent .line_wrap .line .bg2 {
+    width: 120px;
+    height: 30px;
+    background-color: #eef4f1;
+    position: absolute;
+    left: 900px;
+  }
+  #treatment_system .prevent .line_wrap .line .bg3 {
+    width: 126px;
+    height: 30px;
+    background-color: #eef4f1;
+    position: absolute;
+    left: 1377px;
+  }
+  #treatment_system .prevent .line_wrap .text_box1 {
+    display: inline-block;
+  }
+  #treatment_system .prevent .line_wrap .text_box1 > p:nth-of-type(1) {
+    font: 30px/1 "g마켓 산스 ttf";
+    color: #333;
+    position: absolute;
+    top: -10px;
+    left: 355px;
+    width: 205px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: opacityview 8s linear 2.3s 1 normal both;
+    animation-iteration-count: infinite;
+  }
+  #treatment_system .prevent .line_wrap .text_box1 > p:nth-of-type(2) {
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #333;
+    position: absolute;
+    left: 355px;
+  }
+  #treatment_system .prevent .line_wrap .text_box2 {
+    display: inline-block;
+  }
+  #treatment_system .prevent .line_wrap .text_box2 > p:nth-of-type(1) {
+    font: 30px/1 "g마켓 산스 ttf";
+    color: #333;
+    position: absolute;
+    top: -10px;
+    left: 900px;
+    width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: opacityview 8s linear 4.6s 1 normal both;
+    animation-iteration-count: infinite;
+  }
+  #treatment_system .prevent .line_wrap .text_box2 > p:nth-of-type(2) {
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #333;
+    position: absolute;
+    left: 900px;
+  }
+  #treatment_system .prevent .line_wrap .text_box3 {
+    display: inline-block;
+  }
+  #treatment_system .prevent .line_wrap .text_box3 > p:nth-of-type(1) {
+    font: 30px/1 "g마켓 산스 ttf";
+    color: #333;
+    position: absolute;
+    top: -10px;
+    left: 1377px;
+    width: 126px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: opacityview 8s linear 6.5s 1 normal both;
+    animation-iteration-count: infinite;
+  }
+  #treatment_system .prevent .line_wrap .text_box3 > p:nth-of-type(2) {
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #333;
+    position: absolute;
+    left: 1377px;
+  }
+  #treatment_system .stomatology {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef4f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #treatment_system .stomatology .wrap {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  #treatment_system .stomatology .wrap .top {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #treatment_system .stomatology .wrap .top h3 {
+    width: 100px;
+    height: 35px;
+    background-color: #def1df;
+    border: 2px solid #14abe8;
+    border-radius: 30px;
+    font: 18px/35px "g마켓 산스 ttf";
+    color: #14abe8;
+    text-align: center;
+  }
+  #treatment_system .stomatology .wrap .top h4 {
+    font: 25px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .stomatology .wrap .top span {
+    font: 15px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #treatment_system .stomatology .wrap .top h5 {
+    font: bold 30px/1 "g마켓 산스 ttf";
+    color: lightsteelblue;
+    opacity: 0.4;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+  }
+  #treatment_system .stomatology .wrap .bottom {
+    width: 360px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_top {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_top .box {
+    position: relative;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_top .box > img {
+    width: 120px;
+    height: 120px;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_top .box :hover {
+    opacity: 0;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_top .box .hover {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 30;
+    font: 13px/120px "g마켓 산스 ttf";
+    color: #fff;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_bottom {
+    width: 240px;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 60px;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_bottom .box {
+    position: relative;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_bottom .box > img {
+    width: 120px;
+    height: 120px;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_bottom .box :hover {
+    opacity: 0;
+  }
+  #treatment_system .stomatology .wrap .bottom .bottom_bottom .box .hover {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 30;
+    font: 13px/120px "g마켓 산스 ttf";
+    color: #fff;
+  }
+}
+#research {
+  width: 100%;
+}
+#research .intro {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/research/구강연구소-배경.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+#research .intro .research_txt {
+  width: 50%;
+  padding: 100px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#research .intro .research_txt .title h3 {
+  font: bold 60px/1 "g마켓 산스 ttf";
+  color: #333;
+  padding-bottom: 10px;
+}
+#research .intro .research_txt .title h4 {
+  font: bold 60px/1 "g마켓 산스 ttf";
+  color: #333;
+  padding-bottom: 30px;
+}
+#research .intro .research_txt .contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+#research .intro .research_txt .contents span {
+  font: 20px/1 "맑은 고딕";
+  color: #333;
+}
+#research .intro .card {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+#research .intro .card img {
+  width: 240px;
+  height: 360px;
+  transition: all 2s;
+}
+#research .intro .card img:nth-of-type(1) {
+  transform: rotate(-45deg) translate(50%, 25%);
+}
+#research .intro .card img:nth-of-type(2) {
+  transform: translate(-15%, -10%);
+}
+#research .intro .card img:nth-of-type(3) {
+  transform: translate(-70%, -5%) rotate(60deg);
+}
+#research .intro .card img:nth-of-type(4) {
+  transform: translate(-260%, -10%) rotate(45deg);
+}
+#research .intro .card img:nth-of-type(5) {
+  transform: translate(-440%, -5%) rotate(-15deg);
+}
+#research .intro .card:hover > img:nth-of-type(1) {
+  transform: rotate(0deg) translate(0%, 0%);
+}
+#research .intro .card:hover > img:nth-of-type(2) {
+  transform: translate(0%, 0%);
+}
+#research .intro .card:hover > img:nth-of-type(3) {
+  transform: translate(0%, 0%) rotate(0deg);
+}
+#research .intro .card:hover > img:nth-of-type(4) {
+  transform: translate(0%, 0%) rotate(0deg);
+}
+#research .intro .card:hover > img:nth-of-type(5) {
+  transform: translate(0%, 0%) rotate(0deg);
+}
+#research .project {
+  width: 100vw;
+  height: 100vh;
+  padding: 80px 80px;
+  background-color: #eef4f1;
+}
+#research .project .title {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: 3px solid steelblue;
+  position: relative;
+}
+#research .project .title h3 {
+  font: bold 70px/1 "g마켓 산스 ttf";
+  color: #333;
+}
+#research .project .title h4 {
+  font: bold 50px/1 "g마켓 산스 ttf";
+  color: lightsteelblue;
+  opacity: 0.4;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+#research .project .contents {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#research .project .contents .projectbox {
+  width: 33.3333333333%;
+  flex: 1;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 35px;
+  border-right: 3px solid steelblue;
+}
+#research .project .contents .projectbox:nth-of-type(3) {
+  border-right: none;
+}
+#research .project .contents .projectbox h5 {
+  font: bold 50px/1 "g마켓 산스 ttf";
+  color: lightsteelblue;
+  opacity: 0.4;
+}
+#research .project .contents .projectbox img {
+  width: 500px;
+  height: 300px;
+  transition: all 0.8s;
+}
+#research .project .contents .projectbox img:hover {
+  transform: scale(1.1);
+}
+#research .project .contents .projectbox .contentstxt {
+  width: 80%;
+}
+#research .project .contents .projectbox .contentstxt h6 {
+  font: bold 20px/1 "맑은 고딕";
+  color: #333;
+  padding-bottom: 10px;
+}
+#research .project .contents .projectbox .contentstxt span {
+  font: 18px/1.3 "맑은 고딕";
+  color: #333;
+}
+
+@media screen and (max-width: 700px) {
+  #research {
+    width: 100%;
+  }
+  #research .intro {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/research/구강연구소-배경2.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: contain;
+    padding: 10px;
+  }
+  #research .intro .research_txt {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #research .intro .research_txt .title {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+  }
+  #research .intro .research_txt .title h3 {
+    font: bold 30px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 0;
+    padding-right: 10px;
+  }
+  #research .intro .research_txt .title h4 {
+    font: bold 30px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 0;
+  }
+  #research .intro .research_txt .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    gap: 10px;
+  }
+  #research .intro .research_txt .contents span {
+    font: 16px/1 "맑은 고딕";
+    color: #333;
+  }
+  #research .intro .card {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 300px;
+  }
+  #research .intro .card img {
+    width: 120px;
+    height: 180px;
+    transition: all 2s;
+  }
+  #research .intro .card img:nth-of-type(1) {
+    transform: rotate(-45deg) translate(50%, 25%);
+  }
+  #research .intro .card img:nth-of-type(2) {
+    transform: translate(-15%, -10%);
+  }
+  #research .intro .card img:nth-of-type(3) {
+    transform: translate(-70%, -5%) rotate(60deg);
+  }
+  #research .intro .card img:nth-of-type(4) {
+    transform: translate(-260%, -10%) rotate(45deg);
+  }
+  #research .intro .card img:nth-of-type(5) {
+    transform: translate(-440%, -5%) rotate(-15deg);
+  }
+  #research .intro .card:hover > img:nth-of-type(1) {
+    transform: rotate(0deg) translate(0%, 0%);
+  }
+  #research .intro .card:hover > img:nth-of-type(2) {
+    transform: translate(0%, 0%);
+  }
+  #research .intro .card:hover > img:nth-of-type(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  #research .intro .card:hover > img:nth-of-type(4) {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  #research .intro .card:hover > img:nth-of-type(5) {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  #research .project {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    background-color: #eef4f1;
+  }
+  #research .project .title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 3px solid steelblue;
+    position: relative;
+  }
+  #research .project .title h3 {
+    font: bold 50px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #research .project .title h4 {
+    font: bold 30px/1 "g마켓 산스 ttf";
+    color: lightsteelblue;
+    opacity: 0.4;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+  }
+  #research .project .contents {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #research .project .contents .projectbox {
+    width: 33.3333333333%;
+    height: 60%;
+    flex: 1;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    border-right: 3px solid steelblue;
+  }
+  #research .project .contents .projectbox:nth-of-type(3) {
+    border-right: none;
+    padding-bottom: 60px;
+  }
+  #research .project .contents .projectbox h5 {
+    font: bold 50px/1 "g마켓 산스 ttf";
+    color: lightsteelblue;
+    opacity: 0.4;
+  }
+  #research .project .contents .projectbox img {
+    width: 200px;
+    height: 120px;
+    transition: all 0.8s;
+  }
+  #research .project .contents .projectbox img:hover {
+    transform: scale(1.1);
+  }
+  #research .project .contents .projectbox .contentstxt {
+    width: 80%;
+  }
+  #research .project .contents .projectbox .contentstxt h6 {
+    font: bold 18px/1 "맑은 고딕";
+    color: #333;
+    padding-bottom: 10px;
+  }
+  #research .project .contents .projectbox .contentstxt span {
+    font: 16px/1.3 "맑은 고딕";
+    color: #333;
+  }
+}
+@media screen and (max-width: 428px) {
+  #research {
+    width: 100%;
+  }
+  #research .intro {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/research/구강연구소-배경2.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: contain;
+    padding: 10px;
+  }
+  #research .intro .research_txt {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #research .intro .research_txt .title {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+  }
+  #research .intro .research_txt .title h3 {
+    font: bold 18px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 0;
+    padding-right: 5px;
+  }
+  #research .intro .research_txt .title h4 {
+    font: bold 18px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 0;
+  }
+  #research .intro .research_txt .contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    gap: 10px;
+  }
+  #research .intro .research_txt .contents span {
+    font: 13px/1 "맑은 고딕";
+    color: #333;
+  }
+  #research .intro .card {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 200px;
+    padding-left: 20px;
+  }
+  #research .intro .card img {
+    width: 120px;
+    height: 180px;
+    transition: all 2s;
+  }
+  #research .intro .card img:nth-of-type(1) {
+    transform: rotate(-45deg) translate(50%, 25%);
+  }
+  #research .intro .card img:nth-of-type(2) {
+    transform: translate(-15%, -10%);
+  }
+  #research .intro .card img:nth-of-type(3) {
+    transform: translate(-70%, -5%) rotate(60deg);
+  }
+  #research .intro .card img:nth-of-type(4) {
+    transform: translate(-260%, -10%) rotate(45deg);
+  }
+  #research .intro .card img:nth-of-type(5) {
+    transform: translate(-440%, -5%) rotate(-15deg);
+  }
+  #research .intro .card:hover > img:nth-of-type(1) {
+    transform: rotate(0deg) translate(0%, 0%);
+  }
+  #research .intro .card:hover > img:nth-of-type(2) {
+    transform: translate(0%, 0%);
+  }
+  #research .intro .card:hover > img:nth-of-type(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  #research .intro .card:hover > img:nth-of-type(4) {
+    transform: translate(-325%, -105%) rotate(0deg);
+  }
+  #research .intro .card:hover > img:nth-of-type(5) {
+    transform: translate(-325%, -105%) rotate(0deg);
+  }
+  #research .project {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    background-color: #eef4f1;
+  }
+  #research .project .title {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 3px solid steelblue;
+    position: relative;
+  }
+  #research .project .title h3 {
+    font: bold 30px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #research .project .title h4 {
+    font: bold 20px/1 "g마켓 산스 ttf";
+    color: lightsteelblue;
+    opacity: 0.4;
+    position: absolute;
+    top: 35px;
+    right: 0px;
+  }
+  #research .project .contents {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #research .project .contents .projectbox {
+    width: 33.3333333333%;
+    height: 100%;
+    flex: 1;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    border-right: 3px solid steelblue;
+  }
+  #research .project .contents .projectbox:nth-of-type(2) {
+    padding-bottom: 25px;
+  }
+  #research .project .contents .projectbox:nth-of-type(3) {
+    border-right: none;
+    padding-bottom: 82.5px;
+  }
+  #research .project .contents .projectbox h5 {
+    font: bold 50px/1 "g마켓 산스 ttf";
+    color: lightsteelblue;
+    opacity: 0.4;
+  }
+  #research .project .contents .projectbox img {
+    width: 120px;
+    height: 72px;
+    transition: all 0.8s;
+  }
+  #research .project .contents .projectbox img:hover {
+    transform: scale(1.1);
+  }
+  #research .project .contents .projectbox .contentstxt {
+    width: 80%;
+  }
+  #research .project .contents .projectbox .contentstxt h6 {
+    font: bold 16px/1 "맑은 고딕";
+    color: #333;
+    padding-bottom: 10px;
+  }
+  #research .project .contents .projectbox .contentstxt span {
+    font: 14px/1.3 "맑은 고딕";
+    color: #333;
+  }
+}
+#community {
+  width: 100%;
+}
+#community .intro {
+  width: 100%;
+  height: 800px;
+  background-color: #eef4f1;
+}
+#community .intro .loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #333;
+  position: relative;
+}
+#community .intro .loader span {
+  animation: blur 4s infinite;
+  margin: 0.7rem;
+}
+#community .intro .loader span:nth-of-type(1) {
+  animation-delay: 0s;
+}
+#community .intro .loader span:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+#community .intro .loader span:nth-of-type(3) {
+  animation-delay: 0.8s;
+}
+#community .intro .loader span:nth-of-type(4) {
+  animation-delay: 1.2s;
+}
+#community .intro .loader span:nth-of-type(5) {
+  animation-delay: 1.4s;
+}
+#community .intro .loader span:nth-of-type(6) {
+  animation-delay: 1.6s;
+}
+#community .intro .loader span:nth-of-type(7) {
+  animation-delay: 2s;
+}
+#community .intro .loader span:nth-of-type(8) {
+  animation-delay: 2.4s;
+}
+#community .intro .loader span:nth-of-type(9) {
+  animation-delay: 2.8s;
+}
+#community .notice {
+  width: 100%;
+  height: 100vh;
+  background-color: #eef4f1;
+  position: relative;
+  padding: 80px 120px;
+}
+#community .notice .bg_img {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 5;
+}
+#community .notice .bg_img img {
+  width: 400px;
+  height: 400px;
+}
+#community .notice .title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+#community .notice .title h3 {
+  font: 50px/1 "g마켓 산스 ttf";
+  color: #333;
+  padding-bottom: 15px;
+}
+#community .notice .title h4 {
+  font: 25px/1 "g마켓 산스 ttf";
+  color: #333;
+}
+#community .notice .contents {
+  padding: 60px 300px;
+  z-index: 50;
+}
+#community .notice .contents > li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+  color: #333;
+  font: 18px/1 "맑은 고딕";
+}
+#community .notice .contents > li > a {
+  color: #333;
+}
+#community .notice .contents > li:nth-of-type(1) {
+  border-top: 3px solid #333;
+  padding-top: 30px;
+  justify-content: space-around;
+  background-color: #eef4f1;
+  gap: 500px;
+  font: 23px/1 "g마켓 산스 ttf";
+}
+#community .notice .contents > li:nth-last-child(1) {
+  border-bottom: 3px solid #333;
+  padding-bottom: 30px;
+}
+#community .online {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eef4f1;
+  position: relative;
+  padding: 80px 120px;
+}
+#community .online .bg_img {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 5;
+}
+#community .online .bg_img img {
+  width: 400px;
+  height: 400px;
+  transform: scaleX(-1);
+}
+#community .online .title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+#community .online .title h3 {
+  font: 50px/1 "g마켓 산스 ttf";
+  color: #333;
+  padding-bottom: 15px;
+}
+#community .online .title h4 {
+  font: 25px/1 "g마켓 산스 ttf";
+  color: #333;
+}
+#community .online .talk {
+  padding: 60px 300px;
+  width: 100%;
+}
+#community .online .talk thead {
+  width: 100%;
+}
+#community .online .talk thead tr {
+  width: 100%;
+  height: 50px;
+}
+#community .online .talk thead tr th {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 3px solid #333;
+  border-bottom: 1px solid #333;
+  font: 23px/1 "g마켓 산스 ttf";
+}
+#community .online .talk .contents {
+  width: 100%;
+  border-top: 1px solid #333;
+}
+#community .online .talk .contents tr td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  font: 18px/1 "맑은 고딕";
+  color: #333;
+}
+#community .online .talk .contents tr:nth-last-child(1) > td {
+  border-bottom: 3px solid #333;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(0);
+  }
+  25% {
+    filter: blur(1px);
+  }
+  50% {
+    filter: blur(5px);
+  }
+  75% {
+    filter: blur(1px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
+@media screen and (max-width: 700px) {
+  #community {
+    width: 100%;
+  }
+  #community .intro {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: #eef4f1;
+  }
+  #community .intro .loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #333;
+    position: relative;
+  }
+  #community .intro .loader span {
+    animation: blur 4s infinite;
+    margin: 0.7rem;
+  }
+  #community .intro .loader span:nth-of-type(1) {
+    animation-delay: 0s;
+  }
+  #community .intro .loader span:nth-of-type(2) {
+    animation-delay: 0.4s;
+  }
+  #community .intro .loader span:nth-of-type(3) {
+    animation-delay: 0.8s;
+  }
+  #community .intro .loader span:nth-of-type(4) {
+    animation-delay: 1.2s;
+  }
+  #community .intro .loader span:nth-of-type(5) {
+    animation-delay: 1.4s;
+  }
+  #community .intro .loader span:nth-of-type(6) {
+    animation-delay: 1.6s;
+  }
+  #community .intro .loader span:nth-of-type(7) {
+    animation-delay: 2s;
+  }
+  #community .intro .loader span:nth-of-type(8) {
+    animation-delay: 2.4s;
+  }
+  #community .intro .loader span:nth-of-type(9) {
+    animation-delay: 2.8s;
+  }
+  #community .notice {
+    width: 100%;
+    height: 100vh;
+    background-color: #eef4f1;
+    position: relative;
+  }
+  #community .notice .bg_img {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 5;
+  }
+  #community .notice .bg_img img {
+    width: 300px;
+    height: 300px;
+  }
+  #community .notice .title {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  #community .notice .title h3 {
+    font: 40px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 30px;
+  }
+  #community .notice .title h4 {
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 50px;
+  }
+  #community .notice .contents {
+    padding: 10px;
+  }
+  #community .notice .contents > li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+    color: #333;
+    font: 14px/1 "맑은 고딕";
+  }
+  #community .notice .contents > li > a {
+    color: #333;
+  }
+  #community .notice .contents > li:nth-of-type(1) {
+    border-top: 3px solid #333;
+    padding-top: 30px;
+    justify-content: space-around;
+    background-color: #eef4f1;
+    gap: 200px;
+    font: 20px/1 "g마켓 산스 ttf";
+  }
+  #community .notice .contents > li:nth-last-child(1) {
+    border-bottom: 3px solid #333;
+    padding-bottom: 30px;
+  }
+  #community .online {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef4f1;
+    position: relative;
+    padding: 80px 120px;
+  }
+  #community .online .bg_img {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 5;
+  }
+  #community .online .bg_img img {
+    width: 300px;
+    height: 300px;
+    transform: scaleX(-1);
+  }
+  #community .online .title {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  #community .online .title h3 {
+    font: 40px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 15px;
+  }
+  #community .online .title h4 {
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #community .online .talk {
+    padding: 60px 300px;
+    width: 100%;
+  }
+  #community .online .talk thead {
+    width: 100%;
+  }
+  #community .online .talk thead tr {
+    width: 100%;
+    height: 50px;
+  }
+  #community .online .talk thead tr th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 3px solid #333;
+    border-bottom: 1px solid #333;
+    font: 20px/1 "g마켓 산스 ttf";
+  }
+  #community .online .talk .contents {
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+  #community .online .talk .contents tr td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    font: 15px/1 "맑은 고딕";
+    color: #333;
+  }
+  #community .online .talk .contents tr:nth-last-child(1) > td {
+    border-bottom: 3px solid #333;
+  }
+}
+@media screen and (max-width: 428px) {
+  #community {
+    width: 100%;
+  }
+  #community .intro {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: #eef4f1;
+  }
+  #community .intro .loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #333;
+    position: relative;
+  }
+  #community .intro .loader span {
+    animation: blur 4s infinite;
+    margin: 0.7rem;
+  }
+  #community .intro .loader span:nth-of-type(1) {
+    animation-delay: 0s;
+  }
+  #community .intro .loader span:nth-of-type(2) {
+    animation-delay: 0.4s;
+  }
+  #community .intro .loader span:nth-of-type(3) {
+    animation-delay: 0.8s;
+  }
+  #community .intro .loader span:nth-of-type(4) {
+    animation-delay: 1.2s;
+  }
+  #community .intro .loader span:nth-of-type(5) {
+    animation-delay: 1.4s;
+  }
+  #community .intro .loader span:nth-of-type(6) {
+    animation-delay: 1.6s;
+  }
+  #community .intro .loader span:nth-of-type(7) {
+    animation-delay: 2s;
+  }
+  #community .intro .loader span:nth-of-type(8) {
+    animation-delay: 2.4s;
+  }
+  #community .intro .loader span:nth-of-type(9) {
+    animation-delay: 2.8s;
+  }
+  #community .notice {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 70px;
+    background-color: #eef4f1;
+    position: relative;
+  }
+  #community .notice .bg_img {
+    position: absolute;
+    bottom: 100px;
+    right: 10px;
+    z-index: 5;
+  }
+  #community .notice .bg_img img {
+    width: 200px;
+    height: 200px;
+  }
+  #community .notice .title {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  #community .notice .title h3 {
+    font: 40px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 30px;
+  }
+  #community .notice .title h4 {
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 50px;
+  }
+  #community .notice .contents {
+    padding: 0px;
+  }
+  #community .notice .contents > li {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+    color: #333;
+    font: 12px/1 "맑은 고딕";
+  }
+  #community .notice .contents > li > a {
+    color: #333;
+  }
+  #community .notice .contents > li:nth-of-type(1) {
+    border-top: 3px solid #333;
+    padding-top: 30px;
+    justify-content: space-around;
+    background-color: #eef4f1;
+    gap: 80px;
+    font: 20px/1 "g마켓 산스 ttf";
+  }
+  #community .notice .contents > li:nth-last-child(1) {
+    border-bottom: 3px solid #333;
+    padding-bottom: 30px;
+  }
+  #community .online {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eef4f1;
+    position: relative;
+    padding: 30px;
+  }
+  #community .online .bg_img {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    z-index: 5;
+  }
+  #community .online .bg_img img {
+    width: 300px;
+    height: 300px;
+    transform: scaleX(-1);
+  }
+  #community .online .title {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  #community .online .title h3 {
+    font: 40px/1 "g마켓 산스 ttf";
+    color: #333;
+    padding-bottom: 15px;
+  }
+  #community .online .title h4 {
+    font: 20px/1 "g마켓 산스 ttf";
+    color: #333;
+  }
+  #community .online .talk {
+    padding: 60px 300px;
+    width: 100%;
+  }
+  #community .online .talk thead {
+    width: 100%;
+  }
+  #community .online .talk thead tr {
+    width: 100%;
+    height: 50px;
+  }
+  #community .online .talk thead tr th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 3px solid #333;
+    border-bottom: 1px solid #333;
+    font: 18px/1 "g마켓 산스 ttf";
+  }
+  #community .online .talk .contents {
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+  #community .online .talk .contents tr td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    font: 13px/1 "맑은 고딕";
+    color: #333;
+  }
+  #community .online .talk .contents tr:nth-last-child(1) > td {
+    border-bottom: 3px solid #333;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
