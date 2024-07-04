@@ -1124,14 +1124,14 @@ table {
   transform: translate(130%) translateY(-40%) skew(-45deg);
 }
 .main .main_slidemenu article:nth-of-type(1) {
-  background-image: url(/img/메인페이지/slidemenu/동영상\ 시작\ 배경.jpeg);
+  background-image: url(img/메인페이지/slidemenu/동영상\ 시작\ 배경.jpeg);
 }
 .main .main_slidemenu article:nth-of-type(2) {
-  background-image: url(/img/메인페이지/slidemenu/dental\ treatment.jpeg);
+  background-image: url(img/메인페이지/slidemenu/dental\ treatment.jpeg);
 }
 .main .main_slidemenu article:nth-of-type(3) {
   position: relative;
-  background-image: url(/img/메인페이지/slidemenu/구강연구소-수정본.jpg);
+  background-image: url(img/메인페이지/slidemenu/구강연구소-수정본.jpg);
 }
 .main .main_slidemenu article:nth-of-type(3) .txt {
   position: absolute;
@@ -1149,7 +1149,7 @@ table {
   color: #000;
 }
 .main .main_slidemenu article:nth-of-type(4) {
-  background-image: url(/img/메인페이지/slidemenu/커뮤니티-수정본.jpg);
+  background-image: url(img/메인페이지/slidemenu/커뮤니티-수정본.jpg);
 }
 .main .main_slidemenu article:nth-of-type(4) .txt span {
   color: #fff;
@@ -1255,14 +1255,14 @@ table {
     transform: translate(130%) translateY(-40%) skew(-45deg);
   }
   .main .main_slidemenu article:nth-of-type(1) {
-    background-image: url(/img/메인페이지/slidemenu/동영상\ 시작\ 배경.jpeg);
+    background-image: url(img/메인페이지/slidemenu/동영상\ 시작\ 배경.jpeg);
   }
   .main .main_slidemenu article:nth-of-type(2) {
-    background-image: url(/img/메인페이지/slidemenu/dental\ treatment.jpeg);
+    background-image: url(img/메인페이지/slidemenu/dental\ treatment.jpeg);
   }
   .main .main_slidemenu article:nth-of-type(3) {
     position: relative;
-    background-image: url(/img/메인페이지/slidemenu/구강연구소-수정본.jpg);
+    background-image: url(img/메인페이지/slidemenu/구강연구소-수정본.jpg);
   }
   .main .main_slidemenu article:nth-of-type(3) .txt {
     position: absolute;
@@ -1286,7 +1286,7 @@ table {
     color: #fff;
   }
   .main .main_slidemenu article:nth-of-type(4) {
-    background-image: url(/img/메인페이지/slidemenu/커뮤니티-수정본.jpg);
+    background-image: url(img/메인페이지/slidemenu/커뮤니티-수정본.jpg);
   }
   .main .main_slidemenu article:nth-of-type(4) .txt span {
     color: #fff;
@@ -1392,14 +1392,14 @@ table {
     transform: translate(130%) translateY(-40%) skew(-45deg);
   }
   .main .main_slidemenu article:nth-of-type(1) {
-    background-image: url(/img/메인페이지/slidemenu/동영상\ 시작\ 배경.jpeg);
+    background-image: url(img/메인페이지/slidemenu/동영상\ 시작\ 배경.jpeg);
   }
   .main .main_slidemenu article:nth-of-type(2) {
-    background-image: url(/img/메인페이지/slidemenu/dental\ treatment.jpeg);
+    background-image: url(img/메인페이지/slidemenu/dental\ treatment.jpeg);
   }
   .main .main_slidemenu article:nth-of-type(3) {
     position: relative;
-    background-image: url(/img/메인페이지/slidemenu/구강연구소-수정본.jpg);
+    background-image: url(img/메인페이지/slidemenu/구강연구소-수정본.jpg);
   }
   .main .main_slidemenu article:nth-of-type(3) .txt {
     position: absolute;
@@ -1423,7 +1423,7 @@ table {
     color: #fff;
   }
   .main .main_slidemenu article:nth-of-type(4) {
-    background-image: url(/img/메인페이지/slidemenu/커뮤니티-수정본.jpg);
+    background-image: url(img/메인페이지/slidemenu/커뮤니티-수정본.jpg);
   }
   .main .main_slidemenu article:nth-of-type(4) .txt span {
     color: #fff;
@@ -4297,7 +4297,7 @@ table {
 #research .intro {
   width: 100vw;
   height: 100vh;
-  background-image: url(/img/research/구강연구소-배경.jpg);
+  background-image: url(img/research/구강연구소-배경.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4450,7 +4450,7 @@ table {
   #research .intro {
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/research/구강연구소-배경2.jpg);
+    background-image: url(img/research/구강연구소-배경2.jpg);
     background-attachment: fixed;
     background-repeat: repeat;
     background-size: contain;
@@ -4614,7 +4614,7 @@ table {
   #research .intro {
     width: 100vw;
     height: 100vh;
-    background-image: url(/img/research/구강연구소-배경2.jpg);
+    background-image: url(img/research/구강연구소-배경2.jpg);
     background-attachment: fixed;
     background-repeat: repeat;
     background-size: contain;
